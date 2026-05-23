@@ -1,207 +1,1368 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>JB Group</title>
+  <title>JB Group | Starke Marken für Holz, Energie und Alltag</title>
+  <meta name="description" content="Die JB Group aus Südtirol entwickelt und führt Marken in den Bereichen Holz, Energie und Alltagsprodukte." />
 
-<!-- FONT -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Open Sans -->
+  https://fonts.googleapis.com
+  https://fonts.gstatic.com
+  https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap
 
-<style>
-body {
-  margin:0;
-  font-family:"Open Sans",sans-serif;
-  background:#f4f5f7;
-  color:#101828;
-}
+  <style>
+    :root {
+      --navy: #071225;
+      --navy-soft: #101c33;
+      --navy-card: #14213a;
+      --gold: #d6a934;
+      --gold-light: #f0c85a;
+      --bg: #f4f5f7;
+      --white: #ffffff;
+      --text: #101828;
+      --muted: #667085;
+      --border: rgba(16, 24, 40, 0.09);
+      --shadow: 0 20px 50px rgba(16, 24, 40, 0.08);
+      --radius: 20px;
+    }
 
-/* NAV */
-header {
-  position:fixed;
-  width:100%;
-  top:0;
-  left:0;
-  background:#0b1426;
-  padding:18px 20px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  z-index:1000;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-header a {
-  color:white;
-  margin:0 10px;
-  text-decoration:none;
-  font-weight:600;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-.hero {
-  height:100vh;
-  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-  url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4');
-  background-size:cover;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  color:white;
-  padding:20px;
-}
+    body {
+      margin: 0;
+      font-family: "Open Sans", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
 
-.hero h1 {
-  font-size:52px;
-}
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-.btn {
-  display:inline-block;
-  margin:10px;
-  padding:12px 22px;
-  background:#d6a934;
-  color:black;
-  border-radius:30px;
-  font-weight:700;
-  text-decoration:none;
-}
+    img {
+      display: block;
+      max-width: 100%;
+    }
 
-.section {
-  padding:120px 20px;
-  max-width:1000px;
-  margin:auto;
-}
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
 
-.card {
-  background:white;
-  padding:25px;
-  border-radius:12px;
-  margin:10px;
-  flex:1;
-}
+    /* HEADER */
 
-.cards {
-  display:flex;
-  flex-wrap:wrap;
-}
+    .site-header {
+      position: fixed;
+      inset: 0 0 auto 0;
+      height: 72px;
+      z-index: 1000;
+      background: rgba(7, 18, 37, 0.88);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
 
-.dark {
-  background:#0b1426;
-  color:white;
-}
+    .nav {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
 
-footer {
-  background:#0b1426;
-  color:white;
-  text-align:center;
-  padding:30px;
-}
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: white;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+    }
 
-@media(max-width:700px){
-  .cards {
-    display:block;
-  }
-  .hero h1 {
-    font-size:34px;
-  }
-}
-</style>
+    .logo-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 999px;
+      background: rgba(214, 169, 52, 0.14);
+      border: 1px solid rgba(214, 169, 52, 0.35);
+      display: grid;
+      place-items: center;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 14px;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-light);
+    }
+
+    .lang-switch {
+      display: flex;
+      gap: 4px;
+      padding: 4px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .lang-btn {
+      border: 0;
+      background: transparent;
+      color: rgba(255, 255, 255, 0.72);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .lang-btn.active {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .mobile-toggle {
+      display: none;
+      border: 0;
+      background: transparent;
+      color: white;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(7, 18, 37, 0.67), rgba(7, 18, 37, 0.67)),
+        url("https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2200&q=85");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 120px 20px 80px;
+    }
+
+    .hero-content {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 3.5px;
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 76px);
+      line-height: 1.05;
+      margin: 0 0 24px;
+      font-weight: 800;
+      letter-spacing: -1.8px;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto 34px;
+      font-size: clamp(16px, 1.5vw, 20px);
+      color: rgba(255, 255, 255, 0.88);
+      font-weight: 500;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 13px 24px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 800;
+      transition: 0.25s ease;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--navy);
+      box-shadow: 0 14px 34px rgba(214, 169, 52, 0.24);
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.55);
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--gold);
+      color: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    /* GENERAL SECTIONS */
+
+    .section {
+      padding: 100px 0;
+    }
+
+    .section-sm {
+      padding: 78px 0;
+    }
+
+    .section-header {
+      max-width: 760px;
+      margin: 0 auto 50px;
+      text-align: center;
+    }
+
+    .section-label {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: clamp(34px, 4vw, 48px);
+      line-height: 1.14;
+      margin: 0 0 16px;
+      letter-spacing: -0.9px;
+      font-weight: 800;
+    }
+
+    .section-header p,
+    .lead {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    /* ABOUT */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 58px;
+      align-items: center;
+    }
+
+    .about-image {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      min-height: 380px;
+      background:
+        linear-gradient(rgba(7, 18, 37, 0.08), rgba(7, 18, 37, 0.08)),
+        url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=85");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .about-text h3 {
+      font-size: 30px;
+      line-height: 1.25;
+      margin: 0 0 18px;
+      font-weight: 800;
+      letter-spacing: -0.4px;
+    }
+
+    .about-text p {
+      color: var(--muted);
+      margin: 0 0 16px;
+      font-size: 16px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 60px;
+    }
+
+    .stat {
+      background: white;
+      border-radius: 16px;
+      padding: 28px 18px;
+      text-align: center;
+      border: 1px solid var(--border);
+      box-shadow: 0 14px 36px rgba(16, 24, 40, 0.05);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 30px;
+      line-height: 1;
+      color: var(--navy);
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    /* CARDS */
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .info-card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 32px;
+      border: 1px solid var(--border);
+      box-shadow: 0 14px 36px rgba(16, 24, 40, 0.05);
+      transition: 0.25s ease;
+    }
+
+    .info-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+
+    .number {
+      width: 34px;
+      height: 34px;
+      border-radius: 999px;
+      background: rgba(214, 169, 52, 0.13);
+      color: var(--gold);
+      display: grid;
+      place-items: center;
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .info-card h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .info-card p {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    /* BRANDS */
+
+    .brand-card {
+      background: white;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: 0 16px 42px rgba(16, 24, 40, 0.06);
+      transition: 0.25s ease;
+    }
+
+    .brand-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+    }
+
+    .brand-image {
+      height: 220px;
+      overflow: hidden;
+    }
+
+    .brand-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.4s ease;
+    }
+
+    .brand-card:hover .brand-image img {
+      transform: scale(1.05);
+    }
+
+    .brand-body {
+      padding: 28px;
+    }
+
+    .category {
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.7px;
+      margin-bottom: 8px;
+    }
+
+    .brand-body h3 {
+      margin: 0 0 10px;
+      font-size: 23px;
+      font-weight: 800;
+    }
+
+    .brand-body p {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.75;
+      margin: 0 0 18px;
+    }
+
+    .card-link {
+      color: var(--navy);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .card-link span {
+      color: var(--gold);
+    }
+
+    /* DARK */
+
+    .dark-section {
+      background: var(--navy);
+      color: white;
+      padding: 96px 0;
+    }
+
+    .dark-section .section-header p {
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    .strength-card {
+      background: rgba(255, 255, 255, 0.055);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius);
+      padding: 30px 24px;
+      text-align: center;
+      transition: 0.25s ease;
+    }
+
+    .strength-card:hover {
+      background: rgba(255, 255, 255, 0.08);
+      transform: translateY(-4px);
+    }
+
+    .icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 999px;
+      background: rgba(214, 169, 52, 0.14);
+      color: var(--gold);
+      display: grid;
+      place-items: center;
+      margin: 0 auto 16px;
+      font-weight: 800;
+    }
+
+    .strength-card h3 {
+      color: white;
+      margin: 0 0 10px;
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .strength-card p {
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 14.5px;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* CONTACT */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 56px;
+      align-items: start;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .contact-dot {
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      flex: 0 0 36px;
+      background: rgba(214, 169, 52, 0.13);
+      color: var(--gold);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+    .contact-card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 32px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .field {
+      margin-bottom: 16px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 7px;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      border: 1px solid rgba(16, 24, 40, 0.13);
+      border-radius: 12px;
+      padding: 13px 14px;
+      font-family: inherit;
+      font-size: 15px;
+      background: #fbfcfd;
+      color: var(--text);
+      outline: none;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: var(--gold);
+      background: white;
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .submit {
+      width: 100%;
+      border: 0;
+      border-radius: 999px;
+      background: var(--navy);
+      color: white;
+      padding: 14px 18px;
+      font-family: inherit;
+      font-weight: 800;
+      cursor: pointer;
+      transition: 0.25s ease;
+    }
+
+    .submit:hover {
+      background: var(--navy-soft);
+      transform: translateY(-2px);
+    }
+
+    /* FOOTER */
+
+    .site-footer {
+      background: var(--navy);
+      color: rgba(255, 255, 255, 0.72);
+      padding: 58px 0 28px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 0.8fr 0.8fr;
+      gap: 44px;
+      padding-bottom: 38px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: white;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .footer-col h4 {
+      color: white;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+      margin: 0 0 16px;
+    }
+
+    .footer-col a {
+      display: block;
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 14px;
+      margin-bottom: 9px;
+    }
+
+    .footer-col a:hover {
+      color: var(--gold);
+    }
+
+    .copyright {
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 13px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 940px) {
+      .mobile-toggle {
+        display: block;
+      }
+
+      .nav-right {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 72px;
+        background: rgba(7, 18, 37, 0.98);
+        padding: 22px 20px 28px;
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+      }
+
+      .nav-right.open {
+        display: flex;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats,
+      .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .container {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .hero {
+        min-height: 92vh;
+      }
+
+      .section,
+      .section-sm,
+      .dark-section {
+        padding: 70px 0;
+      }
+
+      .hero h1 {
+        letter-spacing: -1px;
+      }
+
+      .stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .stat {
+        padding: 22px 12px;
+      }
+
+      .grid-4 {
+        grid-template-columns: 1fr;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .copyright {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <div style="color:#d6a934;font-weight:800;">JB Group</div>
-  <div>
-    <a href="#about">Über uns</a>
-    <a href="#brands">Marken</a>
-    <a href="#contact">Kontakt</a>
-  </div>
-</header>
+  <header class="site-header">
+    <div class="container nav">
+      #top
+        <span class="logo-mark">JB</span>
+        <span>JB Group</span>
+      </a>
 
-<section class="hero">
-  <div>
-    <h1>Starke Marken für Holz, Energie und Alltag</h1>
-    <p>Die JB Group entwickelt Marken mit Fokus auf Qualität und Nachhaltigkeit.</p>
-    <a href="#brands" class="btn">Unsere Marken</a>
-    <a href="#contact" class="btn">Kontakt</a>
-  </div>
-</section>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menü öffnen">☰</button>
 
-<section class="section" id="about">
-  <h2>Über uns</h2>
-  <p>
-  Die JB Group vereint mehrere Marken aus den Bereichen Holz, Energie und
-  Alltagsprodukte. Unser Fokus liegt auf Qualität, nachhaltigem Wachstum
-  und klarer Positionierung.
-  </p>
-</section>
+      <div class="nav-right" id="navRight">
+        <nav class="nav-links">
+          #aboutÜber uns</a>
+          #brandsMarken</a>
+          #strengthsStärken</a>
+          #contactKontakt</a>
+        </nav>
 
-<section class="section" id="brands">
-  <h2>Unsere Marken</h2>
-
-  <div class="cards">
-    <div class="card">
-      <h3>LEGNOsia</h3>
-      <p>Holzprodukte & Nachhaltigkeit</p>
-      <a href="https://www.legnosia.com" target="_blank">Website →</a>
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="de">DE</button>
+          <button class="lang-btn" data-lang="it">IT</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
     </div>
+  </header>
 
-    <div class="card">
-      <h3>Pellet X</h3>
-      <p>Energie & Pellets</p>
-      <a href="https://www.pelletx.it" target="_blank">Website →</a>
+  <main id="top">
+
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow">JB Group</div>
+        <h1 data-i18n="heroTitle">Starke Marken für Holz, Energie und Alltag.</h1>
+        <p data-i18n="heroText">
+          Die JB Group entwickelt und führt Marken mit klarem Fokus auf Qualität, Nachhaltigkeit und langfristigen Wert.
+        </p>
+        <div class="hero-actions">
+          #brandsUnsere Marken entdecken</a>
+          #contactKontakt aufnehmen</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label" data-i18n="aboutLabel">Über uns</div>
+          <h2 data-i18n="aboutTitle">Die JB Group</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-image"></div>
+
+          <div class="about-text">
+            <h3 data-i18n="aboutHeadline">Starke Marken. Klare Vision.</h3>
+            <p data-i18n="aboutText1">
+              Die JB Group vereint spezialisierte Marken unter einer gemeinsamen strategischen Ausrichtung. Von Holz und Naturmaterialien über Energielösungen bis hin zu praktischen Alltagsprodukten entwickeln wir Geschäftsbereiche, die auf Qualität, Nachhaltigkeit und langfristiges Wachstum ausgerichtet sind.
+            </p>
+            <p data-i18n="aboutText2">
+              Unser Anspruch ist es, Marken aufzubauen, die echten Nutzen schaffen, klare Werte vertreten und in ihren Märkten nachhaltig bestehen.
+            </p>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <strong>3+</strong>
+            <span data-i18n="stat1">Marken</span>
+          </div>
+          <div class="stat">
+            <strong>5+</strong>
+            <span data-i18n="stat2">Länder</span>
+          </div>
+          <div class="stat">
+            <strong>2020</strong>
+            <span data-i18n="stat3">Gegründet</span>
+          </div>
+          <div class="stat">
+            <strong>100%</strong>
+            <span data-i18n="stat4">Qualitätsfokus</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sm">
+      <div class="container">
+        <div class="grid-3">
+          <div class="info-card">
+            <div class="number">01</div>
+            <h3 data-i18n="visionTitle">Vision</h3>
+            <p data-i18n="visionText">Wir entwickeln Marken, die durch klare Positionierung, Qualität und langfristiges Denken überzeugen.</p>
+          </div>
+
+          <div class="info-card">
+            <div class="number">02</div>
+            <h3 data-i18n="missionTitle">Mission</h3>
+            <p data-i18n="missionText">Wir verbinden regionale Werte mit internationaler Perspektive und schaffen Produkte mit echtem Nutzen.</p>
+          </div>
+
+          <div class="info-card">
+            <div class="number">03</div>
+            <h3 data-i18n="valuesTitle">Werte</h3>
+            <p data-i18n="valuesText">Qualität, Nachhaltigkeit und partnerschaftliches Handeln bilden die Grundlage unseres Erfolgs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="brands">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Portfolio</div>
+          <h2 data-i18n="brandsTitle">Unsere Marken</h2>
+          <p data-i18n="brandsText">
+            Jede Marke steht für einen klaren Bereich. Gemeinsam bilden sie ein starkes Portfolio aus Qualität, Nutzen und Innovation.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="brand-card">
+            <div class="brand-image">
+              https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=85
+            </div>
+            <div class="brand-body">
+              <div class="category" data-i18n="legnosiaCat">Holz & Naturmaterialien</div>
+              <h3>LEGNOsia</h3>
+              <p data-i18n="legnosiaText">Hochwertige Holzprodukte mit Fokus auf Design, Qualität und Nachhaltigkeit.</p>
+              <a class="card-link" href="https://www.legnosia.com/" target="_blank" rel="noopener">
+                <span data-i18n="visitWebsite">Zur Website</span> →
+              </a>
+            </div>
+          </article>
+
+          <article class="brand-card">
+            <div class="brand-image">
+              https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1000&q=85
+            </div>
+            <div class="brand-body">
+              <div class="category" data-i18n="pelletCat">Holzpellets & Energie</div>
+              <h3>Pellet X</h3>
+              <p data-i18n="pelletText">Premium-Pelletlösungen für effizientes, zuverlässiges und nachhaltiges Heizen.</p>
+              https://www.pelletx.it/
+                <span data-i18n="visitWebsite">Zur Website</span> →
+              </a>
+            </div>
+          </article>
+
+          <article class="brand-card">
+            <div class="brand-image">
+              https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1000&q=85
+            </div>
+            <div class="brand-body">
+              <div class="category" data-i18n="avyroCat">Alltagsprodukte & Lifestyle</div>
+              <h3>AVYRO</h3>
+              <p data-i18n="avyroText">Praktische, moderne Produkte für ein einfacheres und besser organisiertes Leben.</p>
+              #contact
+                <span data-i18n="visitShop">Zum Shop</span> →
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-section" id="strengths">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label" data-i18n="strengthsLabel">Warum JB Group</div>
+          <h2 data-i18n="strengthsTitle">Unsere Stärken</h2>
+          <p data-i18n="strengthsText">
+            Was uns auszeichnet: klare Strategie, verlässliche Qualität und langfristiges Denken.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          <div class="strength-card">
+            <div class="icon">↗</div>
+            <h3 data-i18n="strength1Title">Innovation</h3>
+            <p data-i18n="strength1Text">Wir setzen auf praxisnahe Lösungen, die echten Mehrwert schaffen.</p>
+          </div>
+
+          <div class="strength-card">
+            <div class="icon">◎</div>
+            <h3 data-i18n="strength2Title">Qualität</h3>
+            <p data-i18n="strength2Text">Wir verfolgen hohe Standards in Produkt, Prozess und Markenauftritt.</p>
+          </div>
+
+          <div class="strength-card">
+            <div class="icon">◇</div>
+            <h3 data-i18n="strength3Title">Nachhaltigkeit</h3>
+            <p data-i18n="strength3Text">Wir denken langfristig und handeln verantwortungsvoll entlang der Wertschöpfung.</p>
+          </div>
+
+          <div class="strength-card">
+            <div class="icon">◌</div>
+            <h3 data-i18n="strength4Title">International</h3>
+            <p data-i18n="strength4Text">Regional verwurzelt, international vernetzt und zukunftsorientiert.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div>
+            <div class="section-label" data-i18n="contactLabel">Kontakt</div>
+            <h2 data-i18n="contactTitle">Sprechen Sie mit uns</h2>
+            <p class="lead" data-i18n="contactText">
+              Haben Sie Fragen zu unseren Marken, Produkten oder möglichen Partnerschaften? Wir freuen uns auf Ihre Nachricht.
+            </p>
+
+            <div class="contact-list">
+              <div class="contact-item">
+                <div class="contact-dot">@</div>
+                <div>
+                  <strong>E-Mail</strong><br>
+                  info@jbgroup.cominfo@jbgroup.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-dot">⌂</div>
+                <div>
+                  <strong data-i18n="addressLabel">Adresse</strong><br>
+                  Pillhofstraße 17, 39057 Eppan a.d.W. / Appiano s.s.d.v. (BZ), IT
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-dot">in</div>
+                <div>
+                  <strong>Social Media</strong><br>
+                  LinkedIn · Instagram · Facebook
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="field">
+                  <label for="name" data-i18n="formName">Name</label>
+                  <input id="name" name="name" type="text" required>
+                </div>
+
+                <div class="field">
+                  <label for="email" data-i18n="formEmail">E-Mail</label>
+                  <input id="email" name="email" type="email" required>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="message" data-i18n="formMessage">Nachricht</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+
+              <button class="submit" type="submit" data-i18n="formButton">Anfrage senden</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <span class="logo-mark">JB</span>
+            <span>JB Group</span>
+          </div>
+          <p data-i18n="footerText">
+            JB Group vereint starke Marken aus Südtirol in den Bereichen Holz, Energie und Alltagsprodukte.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footerNav">Navigation</h4>
+          #aboutÜber uns</a>
+          #brandsMarken</a>
+          #strengthsStärken</a>
+          #contactKontakt</a>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footerLegal">Rechtliches</h4>
+          #Impressum</a>
+          #Datenschutz</a>
+          #AGB</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <span>© 2026 JB Group. <span data-i18n="rights">Alle Rechte vorbehalten.</span></span>
+        <span>Pillhofstraße 17, 39057 Eppan a.d.W. / Appiano s.s.d.v. (BZ), IT</span>
+      </div>
     </div>
+  </footer>
 
-    <div class="card">
-      <h3>AVYRO</h3>
-      <p>Lifestyle Produkte</p>
-    </div>
-  </div>
+  <script>
+    const translations = {
+      de: {
+        navAbout: "Über uns",
+        navBrands: "Marken",
+        navStrengths: "Stärken",
+        navContact: "Kontakt",
 
-</section>
+        heroTitle: "Starke Marken für Holz, Energie und Alltag.",
+        heroText: "Die JB Group entwickelt und führt Marken mit klarem Fokus auf Qualität, Nachhaltigkeit und langfristigen Wert.",
+        heroBtn1: "Unsere Marken entdecken",
+        heroBtn2: "Kontakt aufnehmen",
 
-<section class="section dark">
-  <h2>Unsere Stärken</h2>
+        aboutLabel: "Über uns",
+        aboutTitle: "Die JB Group",
+        aboutHeadline: "Starke Marken. Klare Vision.",
+        aboutText1: "Die JB Group vereint spezialisierte Marken unter einer gemeinsamen strategischen Ausrichtung. Von Holz und Naturmaterialien über Energielösungen bis hin zu praktischen Alltagsprodukten entwickeln wir Geschäftsbereiche, die auf Qualität, Nachhaltigkeit und langfristiges Wachstum ausgerichtet sind.",
+        aboutText2: "Unser Anspruch ist es, Marken aufzubauen, die echten Nutzen schaffen, klare Werte vertreten und in ihren Märkten nachhaltig bestehen.",
 
-  <div class="cards">
-    <div class="card">
-      <h3>Innovation</h3>
-      <p>Praktische Lösungen mit echtem Mehrwert</p>
-    </div>
+        stat1: "Marken",
+        stat2: "Länder",
+        stat3: "Gegründet",
+        stat4: "Qualitätsfokus",
 
-    <div class="card">
-      <h3>Qualität</h3>
-      <p>Hohe Standards in allen Bereichen</p>
-    </div>
+        visionTitle: "Vision",
+        visionText: "Wir entwickeln Marken, die durch klare Positionierung, Qualität und langfristiges Denken überzeugen.",
+        missionTitle: "Mission",
+        missionText: "Wir verbinden regionale Werte mit internationaler Perspektive und schaffen Produkte mit echtem Nutzen.",
+        valuesTitle: "Werte",
+        valuesText: "Qualität, Nachhaltigkeit und partnerschaftliches Handeln bilden die Grundlage unseres Erfolgs.",
 
-    <div class="card">
-      <h3>Nachhaltigkeit</h3>
-      <p>Langfristiges Denken</p>
-    </div>
-  </div>
+        brandsTitle: "Unsere Marken",
+        brandsText: "Jede Marke steht für einen klaren Bereich. Gemeinsam bilden sie ein starkes Portfolio aus Qualität, Nutzen und Innovation.",
+        legnosiaCat: "Holz & Naturmaterialien",
+        legnosiaText: "Hochwertige Holzprodukte mit Fokus auf Design, Qualität und Nachhaltigkeit.",
+        pelletCat: "Holzpellets & Energie",
+        pelletText: "Premium-Pelletlösungen für effizientes, zuverlässiges und nachhaltiges Heizen.",
+        avyroCat: "Alltagsprodukte & Lifestyle",
+        avyroText: "Praktische, moderne Produkte für ein einfacheres und besser organisiertes Leben.",
+        visitWebsite: "Zur Website",
+        visitShop: "Zum Shop",
 
-</section>
+        strengthsLabel: "Warum JB Group",
+        strengthsTitle: "Unsere Stärken",
+        strengthsText: "Was uns auszeichnet: klare Strategie, verlässliche Qualität und langfristiges Denken.",
+        strength1Title: "Innovation",
+        strength1Text: "Wir setzen auf praxisnahe Lösungen, die echten Mehrwert schaffen.",
+        strength2Title: "Qualität",
+        strength2Text: "Wir verfolgen hohe Standards in Produkt, Prozess und Markenauftritt.",
+        strength3Title: "Nachhaltigkeit",
+        strength3Text: "Wir denken langfristig und handeln verantwortungsvoll entlang der Wertschöpfung.",
+        strength4Title: "International",
+        strength4Text: "Regional verwurzelt, international vernetzt und zukunftsorientiert.",
 
-<section class="section" id="contact">
-  <h2>Kontakt</h2>
+        contactLabel: "Kontakt",
+        contactTitle: "Sprechen Sie mit uns",
+        contactText: "Haben Sie Fragen zu unseren Marken, Produkten oder möglichen Partnerschaften? Wir freuen uns auf Ihre Nachricht.",
+        addressLabel: "Adresse",
+        formName: "Name",
+        formEmail: "E-Mail",
+        formMessage: "Nachricht",
+        formButton: "Anfrage senden",
 
-  <p>Email: info@jb-group.com</p>
+        footerText: "JB Group vereint starke Marken aus Südtirol in den Bereichen Holz, Energie und Alltagsprodukte.",
+        footerNav: "Navigation",
+        footerLegal: "Rechtliches",
+        imprint: "Impressum",
+        privacy: "Datenschutz",
+        terms: "AGB",
+        rights: "Alle Rechte vorbehalten."
+      },
 
-  <form>
-    <input type="text" placeholder="Name" required style="width:100%;padding:10px;margin-bottom:10px;">
-    <input type="email" placeholder="Email" required style="width:100%;padding:10px;margin-bottom:10px;">
-    <textarea placeholder="Nachricht" required style="width:100%;padding:10px;"></textarea>
-    <br><br>
-    <button class="btn">Senden</button>
-  </form>
-</section>
+      it: {
+        navAbout: "Chi siamo",
+        navBrands: "Marchi",
+        navStrengths: "Punti di forza",
+        navContact: "Contatto",
 
-<footer>
-  © 2026 JB Group
-</footer>
+        heroTitle: "Marchi forti per legno, energia e vita quotidiana.",
+        heroText: "JB Group sviluppa e gestisce marchi con un chiaro focus su qualità, sostenibilità e valore a lungo termine.",
+        heroBtn1: "Scopri i nostri marchi",
+        heroBtn2: "Contattaci",
+
+        aboutLabel: "Chi siamo",
+        aboutTitle: "JB Group",
+        aboutHeadline: "Marchi forti. Visione chiara.",
+        aboutText1: "JB Group riunisce marchi specializzati sotto un’unica visione strategica. Dal legno e dai materiali naturali alle soluzioni energetiche fino ai prodotti pratici per la vita quotidiana, sviluppiamo aree di business orientate alla qualità, alla sostenibilità e alla crescita a lungo termine.",
+        aboutText2: "Il nostro obiettivo è costruire marchi che creino valore reale, rappresentino valori chiari e possano affermarsi in modo duraturo nei rispettivi mercati.",
+
+        stat1: "Marchi",
+        stat2: "Paesi",
+        stat3: "Dal 2020",
+        stat4: "Focus sulla qualità",
+
+        visionTitle: "Visione",
+        visionText: "Sviluppiamo marchi che convincono grazie a un posizionamento chiaro, alla qualità e a una visione a lungo termine.",
+        missionTitle: "Missione",
+        missionText: "Uniamo valori regionali e prospettiva internazionale per creare prodotti con un valore concreto.",
+        valuesTitle: "Valori",
+        valuesText: "Qualità, sostenibilità e collaborazione sono alla base del nostro successo.",
+
+        brandsTitle: "I nostri marchi",
+        brandsText: "Ogni marchio rappresenta un settore specifico. Insieme formano un portfolio forte, basato su qualità, utilità e innovazione.",
+        legnosiaCat: "Legno & materiali naturali",
+        legnosiaText: "Prodotti in legno di alta qualità con focus su design, qualità e sostenibilità.",
+        pelletCat: "Pellet & energia",
+        pelletText: "Soluzioni pellet premium per un riscaldamento efficiente, affidabile e sostenibile.",
+        avyroCat: "Prodotti quotidiani & lifestyle",
+        avyroText: "Prodotti pratici e moderni per una vita più semplice e meglio organizzata.",
+        visitWebsite: "Vai al sito",
+        visitShop: "Vai allo shop",
+
+        strengthsLabel: "Perché JB Group",
+        strengthsTitle: "I nostri punti di forza",
+        strengthsText: "Ciò che ci distingue: strategia chiara, qualità affidabile e visione a lungo termine.",
+        strength1Title: "Innovazione",
+        strength1Text: "Puntiamo su soluzioni concrete che creano valore reale.",
+        strength2Title: "Qualità",
+        strength2Text: "Manteniamo standard elevati nei prodotti, nei processi e nella presenza del marchio.",
+        strength3Title: "Sostenibilità",
+        strength3Text: "Pensiamo a lungo termine e agiamo in modo responsabile lungo la catena del valore.",
+        strength4Title: "Internazionale",
+        strength4Text: "Radicati nel territorio, connessi a livello internazionale e orientati al futuro.",
+
+        contactLabel: "Contatto",
+        contactTitle: "Parla con noi",
+        contactText: "Hai domande sui nostri marchi, prodotti o possibili collaborazioni? Saremo lieti di ricevere il tuo messaggio.",
+        addressLabel: "Indirizzo",
+        formName: "Nome",
+        formEmail: "E-mail",
+        formMessage: "Messaggio",
+        formButton: "Invia richiesta",
+
+        footerText: "JB Group riunisce marchi forti dell’Alto Adige nei settori legno, energia e prodotti per la vita quotidiana.",
+        footerNav: "Navigazione",
+        footerLegal: "Legale",
+        imprint: "Note legali",
+        privacy: "Privacy",
+        terms: "Termini e condizioni",
+        rights: "Tutti i diritti riservati."
+      },
+
+      en: {
+        navAbout: "About us",
+        navBrands: "Brands",
+        navStrengths: "Strengths",
+        navContact: "Contact",
+
+        heroTitle: "Strong brands for wood, energy and everyday life.",
+        heroText: "JB Group develops and manages brands with a clear focus on quality, sustainability and long-term value.",
+        heroBtn1: "Explore our brands",
+        heroBtn2: "Get in touch",
+
+        aboutLabel: "About us",
+        aboutTitle: "JB Group",
+        aboutHeadline: "Strong brands. Clear vision.",
+        aboutText1: "JB Group brings together specialized brands under one shared strategic direction. From wood and natural materials to energy solutions and practical everyday products, we develop business areas focused on quality, sustainability and long-term growth.",
+        aboutText2: "Our goal is to build brands that create real value, stand for clear principles and remain strong in their markets over time.",
+
+        stat1: "Brands",
+        stat2: "Countries",
+        stat3: "Since 2020",
+        stat4: "Quality focus",
+
+        visionTitle: "Vision",
+        visionText: "We develop brands that stand out through clear positioning, quality and long-term thinking.",
+        missionTitle: "Mission",
+        missionText: "We combine regional values with an international perspective to create products with real value.",
+        valuesTitle: "Values",
+        valuesText: "Quality, sustainability and partnership-driven thinking form the foundation of our success.",
+
+        brandsTitle: "Our brands",
+        brandsText: "Each brand focuses on a clear area. Together, they form a strong portfolio built on quality, usefulness and innovation.",
+        legnosiaCat: "Wood & natural materials",
+        legnosiaText: "High-quality wood products with a focus on design, quality and sustainability.",
+        pelletCat: "Pellets & energy",
+        pelletText: "Premium pellet solutions for efficient, reliable and sustainable heating.",
+        avyroCat: "Everyday products & lifestyle",
+        avyroText: "Practical, modern products for a simpler and better organized everyday life.",
+        visitWebsite: "Visit website",
+        visitShop: "Visit shop",
+
+        strengthsLabel: "Why JB Group",
+        strengthsTitle: "Our strengths",
+        strengthsText: "What defines us: clear strategy, reliable quality and long-term thinking.",
+        strength1Title: "Innovation",
+        strength1Text: "We focus on practical solutions that create real added value.",
+        strength2Title: "Quality",
+        strength2Text: "We maintain high standards in products, processes and brand presence.",
+        strength3Title: "Sustainability",
+        strength3Text: "We think long-term and act responsibly across the value chain.",
+        strength4Title: "International",
+        strength4Text: "Locally rooted, internationally connected and future-oriented.",
+
+        contactLabel: "Contact",
+        contactTitle: "Get in touch",
+        contactText: "Do you have questions about our brands, products or potential partnerships? We look forward to hearing from you.",
+        addressLabel: "Address",
+        formName: "Name",
+        formEmail: "Email",
+        formMessage: "Message",
+        formButton: "Send inquiry",
+
+        footerText: "JB Group brings together strong brands from South Tyrol in the fields of wood, energy and everyday products.",
+        footerNav: "Navigation",
+        footerLegal: "Legal",
+        imprint: "Imprint",
+        privacy: "Privacy Policy",
+        terms: "Terms and Conditions",
+        rights: "All rights reserved."
+      }
+    };
+
+    const langButtons = document.querySelectorAll(".lang-btn");
+    const translatableElements = document.querySelectorAll("[data-i18n]");
+    const navRight = document.getElementById("navRight");
+    const mobileToggle = document.getElementById("mobileToggle");
+
+    function setLanguage(lang) {
+      const dictionary = translations[lang];
+
+      translatableElements.forEach((element) => {
+        const key = element.getAttribute("data-i18n");
+        if (dictionary[key]) {
+          element.textContent = dictionary[key];
+        }
+      });
+
+      langButtons.forEach((button) => {
+        button.classList.toggle("active", button.dataset.lang === lang);
+      });
+
+      document.documentElement.lang = lang;
+      localStorage.setItem("jbGroupLang", lang);
+
+      const titles = {
+        de: "JB Group | Starke Marken für Holz, Energie und Alltag",
+        it: "JB Group | Marchi forti per legno, energia e vita quotidiana",
+        en: "JB Group | Strong brands for wood, energy and everyday life"
+      };
+
+      const descriptions = {
+        de: "Die JB Group aus Südtirol entwickelt und führt Marken in den Bereichen Holz, Energie und Alltagsprodukte.",
+        it: "JB Group dall’Alto Adige sviluppa e gestisce marchi nei settori legno, energia e prodotti quotidiani.",
+        en: "JB Group from South Tyrol develops and manages brands in the fields of wood, energy and everyday products."
+      };
+
+      document.title = titles[lang];
+      document.querySelector('meta[name="description"]').setAttribute("content", descriptions[lang]);
+    }
+
+    langButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        setLanguage(button.dataset.lang);
+      });
+    });
+
+    mobileToggle.addEventListener("click", () => {
+      navRight.classList.toggle("open");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navRight.classList.remove("open");
+      });
+    });
+
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      const subject = encodeURIComponent("Anfrage über JB Group Website");
+      const body = encodeURIComponent(
+        "Name: " + name + "\n" +
+        "E-Mail: " + email + "\n\n" +
+        "Nachricht:\n" + message
+      );
+
+      window.location.href = "mailto:info@jbgroup.com?subject=" + subject + "&body=" + body;
+    });
+
+    setLanguage(localStorage.getItem("jbGroupLang") || "de");
+  </script>
 
 </body>
 </html>
