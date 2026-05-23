@@ -1,32 +1,1467 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JB Group | Starke Marken für Holz, Energie und Alltag</title>
-  <meta name="description" content="Die JB Group aus Südtirol vereint Marken in den Bereichen Biomasse, Pellets und Alltagsprodukte." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset" href="https://fonts.googleapis.com">  <meta charset="UTF-8" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <style>
-    :root{--primary:#071225;--accent:#d6a934;--accent2:#efc65a;--bg:#f4f5f7;--soft:#eef0f3;--card:#fff;--text:#101828;--muted:#667085;--border:rgba(16,24,40,.1);--shadow:0 22px 60px rgba(16,24,40,.08);--radius:22px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Open Sans",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}a{text-decoration:none;color:inherit}.container{width:min(1180px,calc(100% - 40px));margin:auto}.site-header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(7,18,37,.25);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}.site-header.scrolled{background:rgba(7,18,37,.93)}.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between}.logo-link{display:flex;align-items:center;gap:12px;color:white;font-weight:800}.logo-img{width:54px;height:54px;border-radius:999px;object-fit:cover;filter:invert(1) brightness(2);border:1px solid rgba(255,255,255,.16)}.nav-right{display:flex;align-items:center;gap:24px}.nav-links{display:flex;gap:30px}.nav-links a{color:rgba(255,255,255,.78);font-size:14px;font-weight:700}.nav-links a:hover{color:#fff}.lang-switch{display:flex;gap:4px;padding:4px;border-radius:999px;background:rgba(255,255,255,.1)}.lang-btn{border:0;border-radius:999px;padding:6px 10px;background:transparent;color:rgba(255,255,255,.65);font-family:inherit;font-size:12px;font-weight:800;cursor:pointer}.lang-btn.active{background:var(--accent);color:var(--primary)}.mobile-toggle{display:none;background:none;border:0;cursor:pointer}.mobile-toggle span{display:block;width:26px;height:2px;background:white;margin:6px 0;border-radius:99px}.hero{min-height:100vh;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;color:white;padding:120px 20px 90px;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(7,18,37,.58),rgba(7,18,37,.52),rgba(7,18,37,.72)),url("https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2200&q=85") center/cover no-repeat;z-index:-1}.hero-content{max-width:890px}.eyebrow{color:var(--accent2);text-transform:uppercase;letter-spacing:.35em;font-size:12px;font-weight:800;margin-bottom:22px}.hero h1{font-size:clamp(40px,6vw,72px);line-height:1.06;margin:0 0 24px;font-weight:800;letter-spacing:-1.8px}.hero p{max-width:720px;margin:0 auto 36px;color:rgba(255,255,255,.8);font-size:clamp(16px,1.5vw,19px)}.hero-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:14px 28px;border-radius:999px;font-size:14px;font-weight:800;transition:.22s}.btn-primary{background:var(--accent);color:var(--primary)}.btn-secondary{border:1px solid rgba(255,255,255,.32);background:rgba(255,255,255,.1);color:white}.btn:hover{transform:translateY(-2px)}.scroll-cue{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(255,255,255,.56);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.18em}.section{padding:108px 0}.section-sm{padding:78px 0}.section-alt{background:var(--soft)}.section-header{text-align:center;max-width:780px;margin:0 auto 54px}.section-label{color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.3em;text-transform:uppercase;margin-bottom:14px}h2{font-size:clamp(34px,4vw,50px);line-height:1.13;margin:0 0 18px;font-weight:800;letter-spacing:-1px}.section-header p,.lead{color:var(--muted);font-size:16px;line-height:1.85}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:62px;align-items:center;margin-bottom:62px}.about-image{min-height:420px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}.about-image img{width:100%;height:420px;object-fit:cover}.about-text h3{font-size:clamp(25px,3vw,34px);line-height:1.25;margin:0 0 18px;font-weight:800}.about-text p{color:var(--muted);font-size:16px;line-height:1.85}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.stat{background:white;border:1px solid var(--border);border-radius:18px;padding:30px 18px;text-align:center;box-shadow:0 14px 38px rgba(16,24,40,.06)}.stat strong{display:block;font-size:34px;line-height:1;font-weight:800;margin-bottom:10px}.stat span{color:var(--muted);font-size:14px;font-weight:700}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.info-card,.news-card{background:white;border:1px solid var(--border);border-radius:var(--radius);padding:32px;box-shadow:0 14px 38px rgba(16,24,40,.06);transition:.25s}.info-card:hover,.news-card:hover,.brand-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.number{width:40px;height:40px;border-radius:999px;background:rgba(214,169,52,.12);color:var(--accent);display:grid;place-items:center;font-size:13px;font-weight:800;margin-bottom:20px}.info-card h3{margin:0 0 12px;font-size:20px}.info-card p,.news-card p{color:var(--muted);font-size:15px;line-height:1.8;margin:0}.brand-card{background:white;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;box-shadow:0 14px 38px rgba(16,24,40,.06);height:100%;transition:.3s}.brand-img{height:250px;position:relative;overflow:hidden}.brand-img img{width:100%;height:100%;object-fit:cover;transition:.7s}.brand-card:hover .brand-img img{transform:scale(1.06)}.brand-img:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(7,18,37,.62),transparent 68%)}.brand-arrow{position:absolute;top:18px;right:18px;z-index:2;width:40px;height:40px;border-radius:999px;display:grid;place-items:center;color:white;background:rgba(255,255,255,.14)}.brand-body{padding:28px;display:flex;flex-direction:column;min-height:260px}.category{color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;margin-bottom:10px}.brand-body h3{margin:0 0 12px;font-size:23px;font-weight:800}.brand-body p{margin:0 0 20px;color:var(--muted);font-size:15px;line-height:1.78;flex:1}.card-link{font-size:14px;font-weight:800}.dark-section{position:relative;background:var(--primary);color:white;padding:108px 0;overflow:hidden}.dark-section .section-header p{color:rgba(255,255,255,.65)}.strength-card{text-align:center;padding:30px 24px;border-radius:var(--radius);background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.1)}.icon{width:56px;height:56px;margin:0 auto 18px;border-radius:18px;display:grid;place-items:center;background:rgba(214,169,52,.12);color:var(--accent2);font-size:24px}.strength-card h3{margin:0 0 12px;color:white}.strength-card p{margin:0;color:rgba(255,255,255,.65);font-size:14.5px}.news-meta{display:flex;gap:10px;margin-bottom:16px;color:var(--muted);font-size:12px}.pill{color:var(--accent);background:rgba(214,169,52,.12);border-radius:999px;padding:3px 9px;font-weight:800}.news-card h3{margin:0 0 12px;font-size:19px;line-height:1.35}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px}.contact-list{display:grid;gap:24px;margin-top:34px}.contact-item{display:flex;gap:16px;color:var(--muted);font-size:15px}.contact-dot{width:44px;height:44px;flex:0 0 44px;border-radius:15px;display:grid;place-items:center;color:var(--accent);background:rgba(214,169,52,.12)}.contact-item strong{color:var(--text)}.socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}.socials a{border:1px solid var(--border);border-radius:999px;padding:8px 13px;color:var(--muted);font-size:13px;font-weight:700}.contact-card{background:white;border:1px solid var(--border);border-radius:var(--radius);padding:34px;box-shadow:var(--shadow)}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{margin-bottom:18px}label{display:block;margin-bottom:8px;font-size:13px;font-weight:800}input,textarea{width:100%;border:1px solid rgba(16,24,40,.13);border-radius:13px;padding:14px 15px;font-family:inherit;font-size:15px;background:#fbfcfd}textarea{min-height:145px;resize:vertical}.submit{width:100%;border:0;border-radius:999px;background:var(--primary);color:white;padding:15px 20px;font-family:inherit;font-size:14px;font-weight:800;cursor:pointer}.site-footer{background:var(--primary);color:rgba(255,255,255,.58);padding:58px 0 28px}.footer-grid{display:grid;grid-template-columns:1.35fr .8fr .85fr;gap:54px;padding-bottom:38px;border-bottom:1px solid rgba(255,255,255,.1)}.footer-logo{display:flex;align-items:center;gap:12px;color:white;font-weight:800;margin-bottom:17px}.footer-logo img{width:54px;height:54px;border-radius:999px;filter:invert(1) brightness(2)}.footer-col h4{color:rgba(255,255,255,.74);font-size:12px;text-transform:uppercase;letter-spacing:.18em}.footer-col a{display:block;margin-bottom:10px;color:rgba(255,255,255,.5);font-size:14px}.copyright{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-top:24px;font-size:12px;color:rgba(255,255,255,.34)}.reveal{opacity:0;transform:translateY(34px);transition:opacity .7s,transform .7s}.reveal.visible{opacity:1;transform:translateY(0)}@media(max-width:980px){.mobile-toggle{display:block}.nav-right{position:absolute;top:78px;left:0;right:0;display:none;flex-direction:column;align-items:flex-start;gap:22px;padding:24px 20px 30px;background:rgba(7,18,37,.98)}.nav-right.open{display:flex}.nav-links{flex-direction:column;align-items:flex-start;gap:18px}.about-grid,.contact-grid{grid-template-columns:1fr}.stats,.grid-4{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}}@media(max-width:560px){.container{width:min(100% - 28px,1180px)}.logo-text{display:none}.section,.dark-section{padding:76px 0}.section-sm{padding:62px 0}.stats{grid-template-columns:1fr 1fr;gap:12px}.form-row{grid-template-columns:1fr}.contact-card{padding:24px}.copyright{flex-direction:column}}
+    :root {
+      --primary: #071225;
+      --accent: #d6a934;
+      --accent-light: #efc65a;
+      --bg: #f4f5f7;
+      --soft: #eef0f3;
+      --card: #ffffff;
+      --text: #101828;
+      --muted: #667085;
+      --border: rgba(16, 24, 40, 0.1);
+      --shadow: 0 22px 60px rgba(16, 24, 40, 0.08);
+      --radius: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Open Sans", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(7, 18, 37, 0.25);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      transition: 0.25s ease;
+    }
+
+    .site-header.scrolled {
+      background: rgba(7, 18, 37, 0.94);
+    }
+
+    .nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: white;
+      font-weight: 800;
+    }
+
+    .logo-img {
+      width: 54px;
+      height: 54px;
+      border-radius: 999px;
+      object-fit: cover;
+      filter: invert(1) brightness(2);
+      border: 1px solid rgba(255,255,255,0.16);
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      color: rgba(255,255,255,0.78);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    .lang-switch {
+      display: flex;
+      gap: 4px;
+      padding: 4px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.1);
+    }
+
+    .lang-btn {
+      border: 0;
+      border-radius: 999px;
+      padding: 6px 10px;
+      background: transparent;
+      color: rgba(255,255,255,0.65);
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .lang-btn.active {
+      background: var(--accent);
+      color: var(--primary);
+    }
+
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .mobile-toggle span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background: white;
+      margin: 6px 0;
+      border-radius: 99px;
+    }
+
+    .hero {
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 120px 20px 90px;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(rgba(7,18,37,0.58), rgba(7,18,37,0.52), rgba(7,18,37,0.72)),
+        url("https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2200&q=85") center/cover no-repeat;
+      z-index: -1;
+    }
+
+    .hero-content {
+      max-width: 890px;
+    }
+
+    .eyebrow {
+      color: var(--accent-light);
+      text-transform: uppercase;
+      letter-spacing: 0.35em;
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-size: clamp(40px, 6vw, 72px);
+      line-height: 1.06;
+      margin: 0 0 24px;
+      font-weight: 800;
+      letter-spacing: -1.8px;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto 36px;
+      color: rgba(255,255,255,0.82);
+      font-size: clamp(16px, 1.5vw, 19px);
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 800;
+      transition: 0.22s ease;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: var(--primary);
+    }
+
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,0.32);
+      background: rgba(255,255,255,0.1);
+      color: white;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .scroll-cue {
+      position: absolute;
+      bottom: 34px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,0.56);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+    }
+
+    .section {
+      padding: 108px 0;
+    }
+
+    .section-sm {
+      padding: 78px 0;
+    }
+
+    .section-alt {
+      background: var(--soft);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 780px;
+      margin: 0 auto 54px;
+    }
+
+    .section-label {
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: clamp(34px, 4vw, 50px);
+      line-height: 1.13;
+      margin: 0 0 18px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    .section-header p,
+    .lead {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.85;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 62px;
+      align-items: center;
+      margin-bottom: 62px;
+    }
+
+    .about-image {
+      min-height: 420px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+    }
+
+    .about-text h3 {
+      font-size: clamp(25px, 3vw, 34px);
+      line-height: 1.25;
+      margin: 0 0 18px;
+      font-weight: 800;
+    }
+
+    .about-text p {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.85;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .stat {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 30px 18px;
+      text-align: center;
+      box-shadow: 0 14px 38px rgba(16,24,40,0.06);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 34px;
+      line-height: 1;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .info-card,
+    .news-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: 0 14px 38px rgba(16,24,40,0.06);
+      transition: 0.25s ease;
+    }
+
+    .info-card:hover,
+    .news-card:hover,
+    .brand-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+    }
+
+    .number {
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      background: rgba(214,169,52,0.12);
+      color: var(--accent);
+      display: grid;
+      place-items: center;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .info-card h3 {
+      margin: 0 0 12px;
+      font-size: 20px;
+    }
+
+    .info-card p,
+    .news-card p {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    .brand-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 14px 38px rgba(16,24,40,0.06);
+      height: 100%;
+      transition: 0.3s ease;
+    }
+
+    .brand-img {
+      height: 250px;
+      position: relative;
+      overflow: hidden;
+      background: #ddd;
+    }
+
+    .brand-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.7s ease;
+    }
+
+    .brand-card:hover .brand-img img {
+      transform: scale(1.06);
+    }
+
+    .brand-img::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(7,18,37,0.62), transparent 68%);
+    }
+
+    .brand-arrow {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      z-index: 2;
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: rgba(255,255,255,0.14);
+    }
+
+    .brand-body {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      min-height: 260px;
+    }
+
+    .category {
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .brand-body h3 {
+      margin: 0 0 12px;
+      font-size: 23px;
+      font-weight: 800;
+    }
+
+    .brand-body p {
+      margin: 0 0 20px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.78;
+      flex: 1;
+    }
+
+    .card-link {
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .dark-section {
+      position: relative;
+      background: var(--primary);
+      color: white;
+      padding: 108px 0;
+      overflow: hidden;
+    }
+
+    .dark-section .section-header p {
+      color: rgba(255,255,255,0.65);
+    }
+
+    .strength-card {
+      text-align: center;
+      padding: 30px 24px;
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.055);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .icon {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 18px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: rgba(214,169,52,0.12);
+      color: var(--accent-light);
+      font-size: 24px;
+    }
+
+    .strength-card h3 {
+      margin: 0 0 12px;
+      color: white;
+    }
+
+    .strength-card p {
+      margin: 0;
+      color: rgba(255,255,255,0.65);
+      font-size: 14.5px;
+    }
+
+    .news-meta {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 16px;
+      color: var(--muted);
+      font-size: 12px;
+      flex-wrap: wrap;
+    }
+
+    .pill {
+      color: var(--accent);
+      background: rgba(214,169,52,0.12);
+      border-radius: 999px;
+      padding: 3px 9px;
+      font-weight: 800;
+    }
+
+    .news-card h3 {
+      margin: 0 0 12px;
+      font-size: 19px;
+      line-height: 1.35;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 60px;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 24px;
+      margin-top: 34px;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 16px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .contact-dot {
+      width: 44px;
+      height: 44px;
+      flex: 0 0 44px;
+      border-radius: 15px;
+      display: grid;
+      place-items: center;
+      color: var(--accent);
+      background: rgba(214,169,52,0.12);
+    }
+
+    .contact-item strong {
+      color: var(--text);
+    }
+
+    .socials {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 4px;
+    }
+
+    .socials a {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 8px 13px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .contact-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 34px;
+      box-shadow: var(--shadow);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .field {
+      margin-bottom: 18px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      border: 1px solid rgba(16,24,40,0.13);
+      border-radius: 13px;
+      padding: 14px 15px;
+      font-family: inherit;
+      font-size: 15px;
+      background: #fbfcfd;
+    }
+
+    textarea {
+      min-height: 145px;
+      resize: vertical;
+    }
+
+    .submit {
+      width: 100%;
+      border: 0;
+      border-radius: 999px;
+      background: var(--primary);
+      color: white;
+      padding: 15px 20px;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .site-footer {
+      background: var(--primary);
+      color: rgba(255,255,255,0.58);
+      padding: 58px 0 28px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.35fr 0.8fr 0.85fr;
+      gap: 54px;
+      padding-bottom: 38px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: white;
+      font-weight: 800;
+      margin-bottom: 17px;
+    }
+
+    .footer-logo img {
+      width: 54px;
+      height: 54px;
+      border-radius: 999px;
+      filter: invert(1) brightness(2);
+    }
+
+    .footer-col h4 {
+      color: rgba(255,255,255,0.74);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+    }
+
+    .footer-col a {
+      display: block;
+      margin-bottom: 10px;
+      color: rgba(255,255,255,0.5);
+      font-size: 14px;
+    }
+
+    .copyright {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      padding-top: 24px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.34);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(34px);
+      transition: opacity 0.7s, transform 0.7s;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media(max-width: 980px) {
+      .mobile-toggle {
+        display: block;
+      }
+
+      .nav-right {
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+        padding: 24px 20px 30px;
+        background: rgba(7,18,37,0.98);
+      }
+
+      .nav-right.open {
+        display: flex;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats,
+      .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media(max-width: 560px) {
+      .container {
+        width: min(100% - 28px, 1180px);
+      }
+
+      .logo-text {
+        display: none;
+      }
+
+      .section,
+      .dark-section {
+        padding: 76px 0;
+      }
+
+      .section-sm {
+        padding: 62px 0;
+      }
+
+      .stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-card {
+        padding: 24px;
+      }
+
+      .copyright {
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
+
 <body>
-<header class="site-header" id="siteHeader"><div class="container nav"><a href="#hero" class="logo-link"><img class="logo-img" src="https://media.base44.com/images/public/6a0b47ec318842ba1b2deb69/5bb51069c_260403LogoJBGroupSrl.png" alt="JB Group Logo"><span class="logo-text">JB Group</span></a><button class="mobile-toggle" id="mobileToggle" aria-label="Menü öffnen"><span></span><span></span><span></span></button><div class="nav-right" id="navRight"><nav class="nav-links"><a href="#about" data-i18n="navAbout">Über uns</a><a href="#brands" data-i18n="navBrands">Marken</a><a href="#strengths" data-i18n="navStrengths">Stärken</a><a href="#news" data-i18n="navNews">News</a><a href="#contact" data-i18n="navContact">Kontakt</a></nav><div class="lang-switch"><button class="lang-btn active" data-lang="de">DE</button><button class="lang-btn" data-lang="it">IT</button><button class="lang-btn" data-lang="en">EN</button></div></div></div></header>
+
+<header class="site-header" id="siteHeader">
+  <div class="container nav">
+    <a href="#hero" class="logo-link">
+      <img class="logo-img" src="https://media.base44.com/images/public/6a0b47ec318842ba1b2deb69/5bb51069c_260403LogoJBGroupSrl.png" alt="JB Group Logo">
+      <span class="logo-text">JB Group</span>
+    </a>
+
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menü öffnen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="nav-right" id="navRight">
+      <nav class="nav-links">
+        <a href="#about" data-i18n="navAbout">Über uns</a>
+        <a href="#brands" data-i18n="navBrands">Marken</a>
+        <a href="#strengths" data-i18n="navStrengths">Stärken</a>
+        <a href="#news" data-i18n="navNews">News</a>
+        <a href="#contact" data-i18n="navContact">Kontakt</a>
+      </nav>
+
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="de">DE</button>
+        <button class="lang-btn" data-lang="it">IT</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+  </div>
+</header>
+
 <main>
-<section class="hero" id="hero"><div class="hero-content"><div class="eyebrow">JB Group · Südtirol / Alto Adige</div><h1 data-i18n="heroTitle">Starke Marken für Holz, Energie und Alltag.</h1><p data-i18n="heroText">Die JB Group vereint spezialisierte Marken aus Südtirol – mit klarem Fokus auf Qualität, nachhaltiges Wachstum und langfristige Partnerschaften.</p><div class="hero-actions"><a href="#brands" class="btn btn-primary" data-i18n="heroBtn1">Unsere Marken entdecken</a><a href="#contact" class="btn btn-secondary" data-i18n="heroBtn2">Kontakt aufnehmen</a></div></div><a class="scroll-cue" href="#about"><span data-i18n="scrollMore">Mehr erfahren</span><span>⌄</span></a></section>
-<section class="section" id="about"><div class="container"><div class="section-header reveal"><div class="section-label" data-i18n="aboutLabel">Über uns</div><h2 data-i18n="aboutTitle">Die JB Group</h2></div><div class="about-grid"><div class="about-image reveal"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=85" alt="Modernes Büro"></div><div class="about-text reveal"><h3 data-i18n="aboutHeadline">Starke Marken. Klare Vision.</h3><p data-i18n="aboutText1">Die JB Group bündelt spezialisierte Marken unter einer klaren unternehmerischen Vision. Von Biomasse über Pellets bis hin zu praktischen Alltagsgegenständen entstehen Geschäftsfelder mit Substanz, Qualität und langfristiger Perspektive.</p><p data-i18n="aboutText2">Unser Anspruch ist es, Marken zu entwickeln, die einen konkreten Nutzen bieten, verlässlich auftreten und in ihren Märkten langfristig Vertrauen aufbauen.</p></div></div><div class="stats reveal"><div class="stat"><strong>3+</strong><span data-i18n="stat1">Marken</span></div><div class="stat"><strong>5+</strong><span data-i18n="stat2">Länder</span></div><div class="stat"><strong>2020</strong><span data-i18n="stat3">Seit 2020</span></div><div class="stat"><strong>100%</strong><span data-i18n="stat4">Qualitätsfokus</span></div></div></div></section>
-<section class="section-sm"><div class="container"><div class="grid-3"><div class="info-card reveal"><div class="number">01</div><h3 data-i18n="visionTitle">Vision</h3><p data-i18n="visionText">Wir entwickeln Marken, die durch klare Positionierung, Qualität und langfristiges Denken überzeugen.</p></div><div class="info-card reveal"><div class="number">02</div><h3 data-i18n="missionTitle">Mission</h3><p data-i18n="missionText">Wir verbinden regionale Werte mit internationaler Perspektive und schaffen Produkte mit echtem Nutzen.</p></div><div class="info-card reveal"><div class="number">03</div><h3 data-i18n="valuesTitle">Werte</h3><p data-i18n="valuesText">Qualität, Nachhaltigkeit und partnerschaftliches Handeln bilden die Grundlage unseres Erfolgs.</p></div></div></div></section>
-<section class="section section-alt" id="brands"><div class="container"><div class="section-header reveal"><div class="section-label">Portfolio</div><h2 data-i18n="brandsTitle">Unsere Marken</h2><p data-i18n="brandsText">Drei Marken, drei klare Geschäftsbereiche: Biomassehandel, Pellets für Privatkunden und praktische Alltagsgegenstände im Online-Vertrieb.</p></div><div class="grid-3"><a class="brand-card reveal" href="https://www.legnosia.com" target="_blank" rel="noopener noreferrer"><div class="brand-img"><img src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=1000&q=85" alt="Biomasse, Holzrohstoffe und Naturmaterialien"><span class="brand-arrow">↗</span></div><div class="brand-body"><div class="category" data-i18n="legnosiaCat">Biomassehandel</div><h3>LEGNOSIA</h3><p data-i18n="legnosiaText">LEGNOSIA steht für den Handel mit Biomasse und naturbasierten Rohstoffen – mit Fokus auf Qualität, Verlässlichkeit und nachhaltige Energieversorgung.</p><span class="card-link"><span data-i18n="visitWebsite">Zur Website</span> →</span></div></a><a class="brand-card reveal" href="https://www.pelletx.it" target="_blank" rel="noopener noreferrer"><div class="brand-img"><div class="brand-img"><img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1000&q=85" alt="Holzpellets und nachhaltiges Heizen"><span class="brand-arrow">↗</span></div><div class="brand-body"><div class="category" data-i18n="pelletCat">Pellets für Privatkunden</div><h3>PELLETX</h3><p data-i18n="pelletText">PELLETX ist der Online-Shop für Holzpellets für Privatkunden: einfach online bestellen, zuverlässig liefern lassen und effizient heizen.</p><span class="card-link"><span data-i18n="visitShop">Zum Shop</span> →</span></div></a><a class="brand-card reveal" href="#contact"><div class="brand-img"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=85" alt="Alltagsgegenstände und Zuhause"><span class="brand-arrow">↗</span></div><div class="brand-body"><div class="category" data-i18n="avyroCat">Alltagsgegenstände</div><h3>AVYRO</h3><p data-i18n="avyroText">AVYRO ist ein Online-Shop für praktische Alltagsgegenstände, die Haushalt, Organisation und tägliche Abläufe einfacher machen.</p><span class="card-link"><span data-i18n="visitShop">Zum Shop</span> →</span></div></a></div></div></section>
-<section class="dark-section" id="strengths"><div class="container"><div class="section-header reveal"><div class="section-label" data-i18n="strengthsLabel">Warum JB Group</div><h2 data-i18n="strengthsTitle">Unsere Stärken</h2><p data-i18n="strengthsText">Was uns auszeichnet: klare Strategie, verlässliche Qualität und langfristiges Denken.</p></div><div class="grid-4"><div class="strength-card reveal"><div class="icon">↗</div><h3 data-i18n="strength1Title">Innovation</h3><p data-i18n="strength1Text">Wir setzen auf praxisnahe Lösungen, die echten Mehrwert schaffen.</p></div><div class="strength-card reveal"><div class="icon">◎</div><h3 data-i18n="strength2Title">Qualität</h3><p data-i18n="strength2Text">Wir verfolgen hohe Standards in Produkt, Prozess und Markenauftritt.</p></div><div class="strength-card reveal"><div class="icon">◇</div><h3 data-i18n="strength3Title">Nachhaltigkeit</h3><p data-i18n="strength3Text">Wir denken langfristig und handeln verantwortungsvoll entlang der Wertschöpfung.</p></div><div class="strength-card reveal"><div class="icon">◌</div><h3 data-i18n="strength4Title">International</h3><p data-i18n="strength4Text">Regional verwurzelt, international vernetzt und zukunftsorientiert.</p></div></div></div></section>
-<section class="section" id="news"><div class="container"><div class="section-header reveal"><div class="section-label" data-i18n="newsLabel">Aktuelles</div><h2 data-i18n="newsTitle">News & Updates</h2></div><div class="grid-3"><article class="news-card reveal"><div class="news-meta"><span>15. Mai 2026</span><span class="pill" data-i18n="newsCat1">Unternehmen</span></div><h3 data-i18n="news1Title">JB Group baut Markenportfolio weiter aus</h3><p data-i18n="news1Text">Mit klarer Markenführung stärkt die JB Group ihre Bereiche Biomasse, Pellets und Alltagsprodukte.</p><span class="card-link" data-i18n="readMore">Weiterlesen →</span></article><article class="news-card reveal"><div class="news-meta"><span>28. April 2026</span><span class="pill" data-i18n="newsCat2">Marken</span></div><h3 data-i18n="news2Title">LEGNOSIA fokussiert Biomassehandel</h3><p data-i18n="news2Text">Die Marke steht für naturbasierte Rohstoffe, zuverlässige Abwicklung und nachhaltige Energieversorgung.</p><span class="card-link" data-i18n="readMore">Weiterlesen →</span></article><article class="news-card reveal"><div class="news-meta"><span>10. März 2026</span><span class="pill" data-i18n="newsCat3">E-Commerce</span></div><h3 data-i18n="news3Title">PELLETX und AVYRO stärken den Online-Vertrieb</h3><p data-i18n="news3Text">Die Shops verbinden klare Sortimente mit einfacher Bestellung und direktem Kundennutzen.</p><span class="card-link" data-i18n="readMore">Weiterlesen →</span></article></div></div></section>
-<section class="section" id="contact"><div class="container"><div class="section-header reveal"><div class="section-label" data-i18n="contactLabel">Kontakt</div><h2 data-i18n="contactTitle">Sprechen Sie mit uns</h2><p data-i18n="contactText">Ob Marken, Produkte, Kooperationen oder allgemeine Anfragen – wir freuen uns auf den Austausch und melden uns so schnell wie möglich zurück.</p></div><div class="contact-grid"><div class="reveal"><div class="contact-list"><div class="contact-item"><div class="contact-dot">@</div><div><strong>E-Mail</strong><br><a href="mailto:info@jbgroup.com">info@jbgroup.com</a></div></div><div class="contact-item"><div class="contact-dot">☎</div><div><strong data-i18n="phoneLabel">Telefon</strong><br><a href="tel:+3904711750685">+39 0471 1750685</a></div></div><div class="contact-item"><div class="contact-dot">⌂</div><div><strong data-i18n="addressLabel">Adresse</strong><br>Pillhofstraße 17, 39057 Eppan a.d.W. / Appiano s.s.d.v. (BZ), IT</div></div><div class="contact-item"><div class="contact-dot">in</div><div><strong>Social Media</strong><br><div class="socials"><a href="#">LinkedIn</a><a href="#">Instagram</a><a href="#">Facebook</a></div></div></div></div></div><div class="contact-card reveal"><form id="contactForm" action="https://api.web3forms.com/submit" method="POST"><input type="hidden" name="access_key" value="0c19b439-34d8-4644-a0f8-3d7df6657357"><input type="hidden" name="subject" value="Neue Anfrage über die JB Group Website"><input type="hidden" name="from_name" value="JB Group Website"><input type="checkbox" name="botcheck" style="display:none"><div class="form-row"><div class="field"><label for="name" data-i18n="formName">Name</label><input id="name" name="name" type="text" placeholder="Ihr Name" required></div><div class="field"><label for="email" data-i18n="formEmail">E-Mail</label><input id="email" name="email" type="email" placeholder="ihre@email.de" required></div></div><div class="field"><label for="message" data-i18n="formMessage">Nachricht</label><textarea id="message" name="message" placeholder="Ihre Nachricht..." required></textarea></div><button class="submit" type="submit" data-i18n="formButton">Anfrage senden</button></form></div></div></div></section>
+
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <div class="eyebrow">JB Group · Südtirol / Alto Adige</div>
+    <h1 data-i18n="heroTitle">Starke Marken für Holz, Energie und Alltag.</h1>
+    <p data-i18n="heroText">Die JB Group vereint spezialisierte Marken aus Südtirol – mit klarem Fokus auf Qualität, nachhaltiges Wachstum und langfristige Partnerschaften.</p>
+
+    <div class="hero-actions">
+      <a href="#brands" class="btn btn-primary" data-i18n="heroBtn1">Unsere Marken entdecken</a>
+      <a href="#contact" class="btn btn-secondary" data-i18n="heroBtn2">Kontakt aufnehmen</a>
+    </div>
+  </div>
+
+  <a class="scroll-cue" href="#about">
+    <span data-i18n="scrollMore">Mehr erfahren</span>
+    <span>⌄</span>
+  </a>
+</section>
+
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label" data-i18n="aboutLabel">Über uns</div>
+      <h2 data-i18n="aboutTitle">Die JB Group</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-image reveal">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=85" alt="Modernes Büro">
+      </div>
+
+      <div class="about-text reveal">
+        <h3 data-i18n="aboutHeadline">Starke Marken. Klare Vision.</h3>
+        <p data-i18n="aboutText1">Die JB Group bündelt spezialisierte Marken unter einer klaren unternehmerischen Vision. Von Biomasse über Pellets bis hin zu praktischen Alltagsgegenständen entstehen Geschäftsfelder mit Substanz, Qualität und langfristiger Perspektive.</p>
+        <p data-i18n="aboutText2">Unser Anspruch ist es, Marken zu entwickeln, die einen konkreten Nutzen bieten, verlässlich auftreten und in ihren Märkten langfristig Vertrauen aufbauen.</p>
+      </div>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat"><strong>3+</strong><span data-i18n="stat1">Marken</span></div>
+      <div class="stat"><strong>5+</strong><span data-i18n="stat2">Länder</span></div>
+      <div class="stat"><strong>2020</strong><span data-i18n="stat3">Seit 2020</span></div>
+      <div class="stat"><strong>100%</strong><span data-i18n="stat4">Qualitätsfokus</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="container">
+    <div class="grid-3">
+      <div class="info-card reveal">
+        <div class="number">01</div>
+        <h3 data-i18n="visionTitle">Vision</h3>
+        <p data-i18n="visionText">Wir entwickeln Marken, die durch klare Positionierung, Qualität und langfristiges Denken überzeugen.</p>
+      </div>
+
+      <div class="info-card reveal">
+        <div class="number">02</div>
+        <h3 data-i18n="missionTitle">Mission</h3>
+        <p data-i18n="missionText">Wir verbinden regionale Werte mit internationaler Perspektive und schaffen Produkte mit echtem Nutzen.</p>
+      </div>
+
+      <div class="info-card reveal">
+        <div class="number">03</div>
+        <h3 data-i18n="valuesTitle">Werte</h3>
+        <p data-i18n="valuesText">Qualität, Nachhaltigkeit und partnerschaftliches Handeln bilden die Grundlage unseres Erfolgs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="brands">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Portfolio</div>
+      <h2 data-i18n="brandsTitle">Unsere Marken</h2>
+      <p data-i18n="brandsText">Drei Marken, drei klare Geschäftsbereiche: Biomassehandel, Pellets für Privatkunden und praktische Alltagsgegenstände im Online-Vertrieb.</p>
+    </div>
+
+    <div class="grid-3">
+
+      <a class="brand-card reveal" href="https://www.legnosia.com" target="_blank" rel="noopener noreferrer">
+        <div class="brand-img">
+          <img src="https://images.pexels.com/photos/11765701/pexels-photo-11765701.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="LKW mit Holzstämmen">
+          <span class="brand-arrow">↗</span>
+        </div>
+        <div class="brand-body">
+          <div class="category" data-i18n="legnosiaCat">Biomassehandel</div>
+          <h3>LEGNOSIA</h3>
+          <p data-i18n="legnosiaText">LEGNOSIA steht für den Handel mit Biomasse und naturbasierten Rohstoffen – mit Fokus auf Qualität, Verlässlichkeit und nachhaltige Energieversorgung.</p>
+          <span class="card-link"><span data-i18n="visitWebsite">Zur Website</span> →</span>
+        </div>
+      </a>
+
+      <a class="brand-card reveal" href="https://www.pelletx.it" target="_blank" rel="noopener noreferrer">
+        <div class="brand-img">
+          <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=1000&q=85" alt="Holzpellets">
+          <span class="brand-arrow">↗</span>
+        </div>
+        <div class="brand-body">
+          <div class="category" data-i18n="pelletCat">Pellets für Privatkunden</div>
+          <h3>PELLETX</h3>
+          <p data-i18n="pelletText">PELLETX ist der Online-Shop für Holzpellets für Privatkunden: einfach online bestellen, zuverlässig liefern lassen und effizient heizen.</p>
+          <span class="card-link"><span data-i18n="visitShop">Zum Shop</span> →</span>
+        </div>
+      </a>
+
+      <a class="brand-card reveal" href="#contact">
+        <div class="brand-img">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=85" alt="Alltagsgegenstände und Zuhause">
+          <span class="brand-arrow">↗</span>
+        </div>
+        <div class="brand-body">
+          <div class="category" data-i18n="avyroCat">Alltagsgegenstände</div>
+          <h3>AVYRO</h3>
+          <p data-i18n="avyroText">AVYRO ist ein Online-Shop für praktische Alltagsgegenstände, die Haushalt, Organisation und tägliche Abläufe einfacher machen.</p>
+          <span class="card-link"><span data-i18n="visitShop">Zum Shop</span> →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section class="dark-section" id="strengths">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label" data-i18n="strengthsLabel">Warum JB Group</div>
+      <h2 data-i18n="strengthsTitle">Unsere Stärken</h2>
+      <p data-i18n="strengthsText">Was uns auszeichnet: klare Strategie, verlässliche Qualität und langfristiges Denken.</p>
+    </div>
+
+    <div class="grid-4">
+      <div class="strength-card reveal">
+        <div class="icon">↗</div>
+        <h3 data-i18n="strength1Title">Innovation</h3>
+        <p data-i18n="strength1Text">Wir setzen auf praxisnahe Lösungen, die echten Mehrwert schaffen.</p>
+      </div>
+
+      <div class="strength-card reveal">
+        <div class="icon">◎</div>
+        <h3 data-i18n="strength2Title">Qualität</h3>
+        <p data-i18n="strength2Text">Wir verfolgen hohe Standards in Produkt, Prozess und Markenauftritt.</p>
+      </div>
+
+      <div class="strength-card reveal">
+        <div class="icon">◇</div>
+        <h3 data-i18n="strength3Title">Nachhaltigkeit</h3>
+        <p data-i18n="strength3Text">Wir denken langfristig und handeln verantwortungsvoll entlang der Wertschöpfung.</p>
+      </div>
+
+      <div class="strength-card reveal">
+        <div class="icon">◌</div>
+        <h3 data-i18n="strength4Title">International</h3>
+        <p data-i18n="strength4Text">Regional verwurzelt, international vernetzt und zukunftsorientiert.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="news">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label" data-i18n="newsLabel">Aktuelles</div>
+      <h2 data-i18n="newsTitle">News & Updates</h2>
+    </div>
+
+    <div class="grid-3">
+      <article class="news-card reveal">
+        <div class="news-meta">
+          <span>15. Mai 2026</span>
+          <span class="pill" data-i18n="newsCat1">Unternehmen</span>
+        </div>
+        <h3 data-i18n="news1Title">JB Group baut Markenportfolio weiter aus</h3>
+        <p data-i18n="news1Text">Mit klarer Markenführung stärkt die JB Group ihre Bereiche Biomasse, Pellets und Alltagsprodukte.</p>
+        <span class="card-link" data-i18n="readMore">Weiterlesen →</span>
+      </article>
+
+      <article class="news-card reveal">
+        <div class="news-meta">
+          <span>28. April 2026</span>
+          <span class="pill" data-i18n="newsCat2">Marken</span>
+        </div>
+        <h3 data-i18n="news2Title">LEGNOSIA fokussiert Biomassehandel</h3>
+        <p data-i18n="news2Text">Die Marke steht für naturbasierte Rohstoffe, zuverlässige Abwicklung und nachhaltige Energieversorgung.</p>
+        <span class="card-link" data-i18n="readMore">Weiterlesen →</span>
+      </article>
+
+      <article class="news-card reveal">
+        <div class="news-meta">
+          <span>10. März 2026</span>
+          <span class="pill" data-i18n="newsCat3">E-Commerce</span>
+        </div>
+        <h3 data-i18n="news3Title">PELLETX und AVYRO stärken den Online-Vertrieb</h3>
+        <p data-i18n="news3Text">Die Shops verbinden klare Sortimente mit einfacher Bestellung und direktem Kundennutzen.</p>
+        <span class="card-link" data-i18n="readMore">Weiterlesen →</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label" data-i18n="contactLabel">Kontakt</div>
+      <h2 data-i18n="contactTitle">Sprechen Sie mit uns</h2>
+      <p data-i18n="contactText">Ob Marken, Produkte, Kooperationen oder allgemeine Anfragen – wir freuen uns auf den Austausch und melden uns so schnell wie möglich zurück.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-list">
+          <div class="contact-item">
+            <div class="contact-dot">@</div>
+            <div>
+              <strong>E-Mail</strong><br>
+              <a href="mailto:info@jbgroup.com">info@jbgroup.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-dot">☎</div>
+            <div>
+              <strong data-i18n="phoneLabel">Telefon</strong><br>
+              <a href="tel:+3904711750685">+39 0471 1750685</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-dot">⌂</div>
+            <div>
+              <strong data-i18n="addressLabel">Adresse</strong><br>
+              Pillhofstraße 17, 39057 Eppan a.d.W. / Appiano s.s.d.v. (BZ), IT
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-dot">in</div>
+            <div>
+              <strong>Social Media</strong><br>
+              <div class="socials">
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-card reveal">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="0c19b439-34d8-4644-a0f8-3d7df6657357">
+          <input type="hidden" name="subject" value="Neue Anfrage über die JB Group Website">
+          <input type="hidden" name="from_name" value="JB Group Website">
+          <input type="checkbox" name="botcheck" style="display:none">
+
+          <div class="form-row">
+            <div class="field">
+              <label for="name" data-i18n="formName">Name</label>
+              <input id="name" name="name" type="text" placeholder="Ihr Name" required>
+            </div>
+
+            <div class="field">
+              <label for="email" data-i18n="formEmail">E-Mail</label>
+              <input id="email" name="email" type="email" placeholder="ihre@email.de" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message" data-i18n="formMessage">Nachricht</label>
+            <textarea id="message" name="message" placeholder="Ihre Nachricht..." required></textarea>
+          </div>
+
+          <button class="submit" type="submit" data-i18n="formButton">Anfrage senden</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
 </main>
-<footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-col"><div class="footer-logo"><img src="https://media.base44.com/images/public/6a0b47ec318842ba1b2deb69/5bb51069c_260403LogoJBGroupSrl.png" alt="JB Group Logo"><span>JB Group</span></div><p data-i18n="footerText">JB Group vereint spezialisierte Marken aus Südtirol in den Bereichen Biomasse, Pellets und Alltagsprodukte.</p></div><div class="footer-col"><h4 data-i18n="footerNav">Navigation</h4><a href="#about" data-i18n="navAbout">Über uns</a><a href="#brands" data-i18n="navBrands">Marken</a><a href="#strengths" data-i18n="navStrengths">Stärken</a><a href="#contact" data-i18n="navContact">Kontakt</a></div><div class="footer-col"><h4 data-i18n="footerLegal">Rechtliches</h4><a href="#" data-i18n="imprint">Impressum</a><a href="#" data-i18n="privacy">Datenschutz</a><a href="#" data-i18n="terms">AGB</a></div></div><div class="copyright"><span>© 2026 JB Group GmbH. <span data-i18n="rights">Alle Rechte vorbehalten.</span></span><span>Pillhofstraße 17, 39057 Eppan a.d.W. (BZ) — IT</span></div></div></footer>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="https://media.base44.com/images/public/6a0b47ec318842ba1b2deb69/5bb51069c_260403LogoJBGroupSrl.png" alt="JB Group Logo">
+          <span>JB Group</span>
+        </div>
+        <p data-i18n="footerText">JB Group vereint spezialisierte Marken aus Südtirol in den Bereichen Biomasse, Pellets und Alltagsprodukte.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footerNav">Navigation</h4>
+        <a href="#about" data-i18n="navAbout">Über uns</a>
+        <a href="#brands" data-i18n="navBrands">Marken</a>
+        <a href="#strengths" data-i18n="navStrengths">Stärken</a>
+        <a href="#contact" data-i18n="navContact">Kontakt</a>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footerLegal">Rechtliches</h4>
+        <a href="#" data-i18n="imprint">Impressum</a>
+        <a href="#" data-i18n="privacy">Datenschutz</a>
+        <a href="#" data-i18n="terms">AGB</a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <span>© 2026 JB Group GmbH. <span data-i18n="rights">Alle Rechte vorbehalten.</span></span>
+      <span>Pillhofstraße 17, 39057 Eppan a.d.W. (BZ) — IT</span>
+    </div>
+  </div>
+</footer>
+
 <script>
-const translations={de:{navAbout:"Über uns",navBrands:"Marken",navStrengths:"Stärken",navNews:"News",navContact:"Kontakt",scrollMore:"Mehr erfahren",heroTitle:"Starke Marken für Holz, Energie und Alltag.",heroText:"Die JB Group vereint spezialisierte Marken aus Südtirol – mit klarem Fokus auf Qualität, nachhaltiges Wachstum und langfristige Partnerschaften.",heroBtn1:"Unsere Marken entdecken",heroBtn2:"Kontakt aufnehmen",aboutLabel:"Über uns",aboutTitle:"Die JB Group",aboutHeadline:"Starke Marken. Klare Vision.",aboutText1:"Die JB Group bündelt spezialisierte Marken unter einer klaren unternehmerischen Vision. Von Biomasse über Pellets bis hin zu praktischen Alltagsgegenständen entstehen Geschäftsfelder mit Substanz, Qualität und langfristiger Perspektive.",aboutText2:"Unser Anspruch ist es, Marken zu entwickeln, die einen konkreten Nutzen bieten, verlässlich auftreten und in ihren Märkten langfristig Vertrauen aufbauen.",stat1:"Marken",stat2:"Länder",stat3:"Seit 2020",stat4:"Qualitätsfokus",visionTitle:"Vision",visionText:"Wir entwickeln Marken, die durch klare Positionierung, Qualität und langfristiges Denken überzeugen.",missionTitle:"Mission",missionText:"Wir verbinden regionale Werte mit internationaler Perspektive und schaffen Produkte mit echtem Nutzen.",valuesTitle:"Werte",valuesText:"Qualität, Nachhaltigkeit und partnerschaftliches Handeln bilden die Grundlage unseres Erfolgs.",brandsTitle:"Unsere Marken",brandsText:"Drei Marken, drei klare Geschäftsbereiche: Biomassehandel, Pellets für Privatkunden und praktische Alltagsgegenstände im Online-Vertrieb.",legnosiaCat:"Biomassehandel",legnosiaText:"LEGNOSIA steht für den Handel mit Biomasse und naturbasierten Rohstoffen – mit Fokus auf Qualität, Verlässlichkeit und nachhaltige Energieversorgung.",pelletCat:"Pellets für Privatkunden",pelletText:"PELLETX ist der Online-Shop für Holzpellets für Privatkunden: einfach online bestellen, zuverlässig liefern lassen und effizient heizen.",avyroCat:"Alltagsgegenstände",avyroText:"AVYRO ist ein Online-Shop für praktische Alltagsgegenstände, die Haushalt, Organisation und tägliche Abläufe einfacher machen.",visitWebsite:"Zur Website",visitShop:"Zum Shop",strengthsLabel:"Warum JB Group",strengthsTitle:"Unsere Stärken",strengthsText:"Was uns auszeichnet: klare Strategie, verlässliche Qualität und langfristiges Denken.",strength1Title:"Innovation",strength1Text:"Wir setzen auf praxisnahe Lösungen, die echten Mehrwert schaffen.",strength2Title:"Qualität",strength2Text:"Wir verfolgen hohe Standards in Produkt, Prozess und Markenauftritt.",strength3Title:"Nachhaltigkeit",strength3Text:"Wir denken langfristig und handeln verantwortungsvoll entlang der Wertschöpfung.",strength4Title:"International",strength4Text:"Regional verwurzelt, international vernetzt und zukunftsorientiert.",newsLabel:"Aktuelles",newsTitle:"News & Updates",newsCat1:"Unternehmen",newsCat2:"Marken",newsCat3:"E-Commerce",news1Title:"JB Group baut Markenportfolio weiter aus",news1Text:"Mit klarer Markenführung stärkt die JB Group ihre Bereiche Biomasse, Pellets und Alltagsprodukte.",news2Title:"LEGNOSIA fokussiert Biomassehandel",news2Text:"Die Marke steht für naturbasierte Rohstoffe, zuverlässige Abwicklung und nachhaltige Energieversorgung.",news3Title:"PELLETX und AVYRO stärken den Online-Vertrieb",news3Text:"Die Shops verbinden klare Sortimente mit einfacher Bestellung und direktem Kundennutzen.",readMore:"Weiterlesen →",contactLabel:"Kontakt",contactTitle:"Sprechen Sie mit uns",contactText:"Ob Marken, Produkte, Kooperationen oder allgemeine Anfragen – wir freuen uns auf den Austausch und melden uns so schnell wie möglich zurück.",phoneLabel:"Telefon",addressLabel:"Adresse",formName:"Name",formEmail:"E-Mail",formMessage:"Nachricht",formButton:"Anfrage senden",footerText:"JB Group vereint spezialisierte Marken aus Südtirol in den Bereichen Biomasse, Pellets und Alltagsprodukte.",footerNav:"Navigation",footerLegal:"Rechtliches",imprint:"Impressum",privacy:"Datenschutz",terms:"AGB",rights:"Alle Rechte vorbehalten."},it:{navAbout:"Chi siamo",navBrands:"Marchi",navStrengths:"Punti di forza",navNews:"News",navContact:"Contatto",scrollMore:"Scopri di più",heroTitle:"Marchi forti per legno, energia e vita quotidiana.",heroText:"JB Group riunisce marchi specializzati dell’Alto Adige, con focus su qualità, crescita sostenibile e partnership a lungo termine.",heroBtn1:"Scopri i nostri marchi",heroBtn2:"Contattaci",aboutLabel:"Chi siamo",aboutTitle:"JB Group",aboutHeadline:"Marchi forti. Visione chiara.",aboutText1:"JB Group riunisce marchi specializzati sotto una chiara visione imprenditoriale. Dalla biomassa ai pellet fino ai prodotti per la vita quotidiana, sviluppiamo aree di business solide e orientate al lungo termine.",aboutText2:"Il nostro obiettivo è sviluppare marchi utili, affidabili e capaci di costruire fiducia nei rispettivi mercati.",stat1:"Marchi",stat2:"Paesi",stat3:"Dal 2020",stat4:"Focus sulla qualità",visionTitle:"Visione",visionText:"Sviluppiamo marchi che convincono grazie a posizionamento chiaro, qualità e visione a lungo termine.",missionTitle:"Missione",missionText:"Uniamo valori regionali e prospettiva internazionale per creare prodotti con valore concreto.",valuesTitle:"Valori",valuesText:"Qualità, sostenibilità e collaborazione sono alla base del nostro successo.",brandsTitle:"I nostri marchi",brandsText:"Tre marchi, tre aree chiare: commercio di biomassa, pellet per clienti privati e prodotti quotidiani online.",legnosiaCat:"Commercio di biomassa",legnosiaText:"LEGNOSIA opera nel commercio di biomassa e materie prime naturali, con focus su qualità, affidabilità e approvvigionamento energetico sostenibile.",pelletCat:"Pellet per privati",pelletText:"PELLETX è lo shop online di pellet per clienti privati: ordinazione semplice, consegna affidabile e riscaldamento efficiente.",avyroCat:"Prodotti quotidiani",avyroText:"AVYRO è uno shop online di prodotti pratici per la vita quotidiana, pensati per semplificare casa, organizzazione e routine.",visitWebsite:"Vai al sito",visitShop:"Vai allo shop",strengthsLabel:"Perché JB Group",strengthsTitle:"I nostri punti di forza",strengthsText:"Ciò che ci distingue: strategia chiara, qualità affidabile e visione a lungo termine.",strength1Title:"Innovazione",strength1Text:"Puntiamo su soluzioni concrete che creano valore reale.",strength2Title:"Qualità",strength2Text:"Manteniamo standard elevati nei prodotti, nei processi e nella presenza del marchio.",strength3Title:"Sostenibilità",strength3Text:"Pensiamo a lungo termine e agiamo in modo responsabile lungo la catena del valore.",strength4Title:"Internazionale",strength4Text:"Radicati nel territorio, connessi a livello internazionale e orientati al futuro.",newsLabel:"Attualità",newsTitle:"News & aggiornamenti",newsCat1:"Azienda",newsCat2:"Marchi",newsCat3:"E-commerce",news1Title:"JB Group sviluppa il proprio portfolio di marchi",news1Text:"Con una gestione chiara dei marchi, JB Group rafforza le aree biomassa, pellet e prodotti quotidiani.",news2Title:"LEGNOSIA si focalizza sul commercio di biomassa",news2Text:"Il marchio rappresenta materie prime naturali, gestione affidabile e approvvigionamento energetico sostenibile.",news3Title:"PELLETX e AVYRO rafforzano il canale online",news3Text:"Gli shop uniscono assortimenti chiari, acquisto semplice e valore diretto per il cliente.",readMore:"Leggi di più →",contactLabel:"Contatto",contactTitle:"Parla con noi",contactText:"Per marchi, prodotti, collaborazioni o richieste generali, saremo lieti di ricevere il tuo messaggio.",phoneLabel:"Telefono",addressLabel:"Indirizzo",formName:"Nome",formEmail:"E-mail",formMessage:"Messaggio",formButton:"Invia richiesta",footerText:"JB Group riunisce marchi specializzati dell’Alto Adige nei settori biomassa, pellet e prodotti quotidiani.",footerNav:"Navigazione",footerLegal:"Legale",imprint:"Note legali",privacy:"Privacy",terms:"Termini e condizioni",rights:"Tutti i diritti riservati."},en:{navAbout:"About us",navBrands:"Brands",navStrengths:"Strengths",navNews:"News",navContact:"Contact",scrollMore:"Learn more",heroTitle:"Strong brands for wood, energy and everyday life.",heroText:"JB Group brings together specialized brands from South Tyrol, focused on quality, sustainable growth and long-term partnerships.",heroBtn1:"Explore our brands",heroBtn2:"Get in touch",aboutLabel:"About us",aboutTitle:"JB Group",aboutHeadline:"Strong brands. Clear vision.",aboutText1:"JB Group brings together specialized brands under a clear entrepreneurial vision. From biomass to pellets and everyday products, we develop focused business areas with substance and long-term perspective.",aboutText2:"Our goal is to develop brands that deliver clear value, act reliably and build trust in their markets over time.",stat1:"Brands",stat2:"Countries",stat3:"Since 2020",stat4:"Quality focus",visionTitle:"Vision",visionText:"We develop brands that stand out through clear positioning, quality and long-term thinking.",missionTitle:"Mission",missionText:"We combine regional values with an international perspective to create products with real value.",valuesTitle:"Values",valuesText:"Quality, sustainability and partnership-driven thinking form the foundation of our success.",brandsTitle:"Our brands",brandsText:"Three brands, three clear business areas: biomass trading, pellets for private customers and everyday products online.",legnosiaCat:"Biomass trading",legnosiaText:"LEGNOSIA focuses on trading biomass and natural raw materials, with an emphasis on quality, reliability and sustainable energy supply.",pelletCat:"Pellets for private customers",pelletText:"PELLETX is the online shop for wood pellets for private customers: order online, receive reliable delivery and heat efficiently.",avyroCat:"Everyday products",avyroText:"AVYRO is an online shop for practical everyday items designed to simplify home, organization and daily routines.",visitWebsite:"Visit website",visitShop:"Visit shop",strengthsLabel:"Why JB Group",strengthsTitle:"Our strengths",strengthsText:"What defines us: clear strategy, reliable quality and long-term thinking.",strength1Title:"Innovation",strength1Text:"We focus on practical solutions that create real added value.",strength2Title:"Quality",strength2Text:"We maintain high standards in products, processes and brand presence.",strength3Title:"Sustainability",strength3Text:"We think long-term and act responsibly across the value chain.",strength4Title:"International",strength4Text:"Locally rooted, internationally connected and future-oriented.",newsLabel:"Latest",newsTitle:"News & updates",newsCat1:"Company",newsCat2:"Brands",newsCat3:"E-commerce",news1Title:"JB Group continues to develop its brand portfolio",news1Text:"With clear brand management, JB Group strengthens its biomass, pellets and everyday products areas.",news2Title:"LEGNOSIA focuses on biomass trading",news2Text:"The brand stands for natural raw materials, reliable execution and sustainable energy supply.",news3Title:"PELLETX and AVYRO strengthen online distribution",news3Text:"The shops combine clear assortments, easy ordering and direct customer value.",readMore:"Read more →",contactLabel:"Contact",contactTitle:"Get in touch",contactText:"For brands, products, partnerships or general inquiries, we look forward to hearing from you.",phoneLabel:"Phone",addressLabel:"Address",formName:"Name",formEmail:"Email",formMessage:"Message",formButton:"Send inquiry",footerText:"JB Group brings together specialized brands from South Tyrol in biomass, pellets and everyday products.",footerNav:"Navigation",footerLegal:"Legal",imprint:"Imprint",privacy:"Privacy Policy",terms:"Terms",rights:"All rights reserved."}};
-const langButtons=document.querySelectorAll('.lang-btn'),i18n=document.querySelectorAll('[data-i18n]'),navRight=document.getElementById('navRight'),mobileToggle=document.getElementById('mobileToggle'),siteHeader=document.getElementById('siteHeader');function setLanguage(lang){const d=translations[lang]||translations.de;i18n.forEach(e=>{const k=e.dataset.i18n;if(d[k])e.textContent=d[k]});langButtons.forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));document.documentElement.lang=lang;localStorage.setItem('jbGroupLang',lang)}langButtons.forEach(b=>b.addEventListener('click',()=>setLanguage(b.dataset.lang)));mobileToggle.addEventListener('click',()=>navRight.classList.toggle('open'));document.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navRight.classList.remove('open')));window.addEventListener('scroll',()=>siteHeader.classList.toggle('scrolled',window.scrollY>20));const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(e=>obs.observe(e));setLanguage(localStorage.getItem('jbGroupLang')||'de');
+const translations = {
+  de: {
+    navAbout: "Über uns",
+    navBrands: "Marken",
+    navStrengths: "Stärken",
+    navNews: "News",
+    navContact: "Kontakt",
+    scrollMore: "Mehr erfahren",
+    heroTitle: "Starke Marken für Holz, Energie und Alltag.",
+    heroText: "Die JB Group vereint spezialisierte Marken aus Südtirol – mit klarem Fokus auf Qualität, nachhaltiges Wachstum und langfristige Partnerschaften.",
+    heroBtn1: "Unsere Marken entdecken",
+    heroBtn2: "Kontakt aufnehmen",
+    aboutLabel: "Über uns",
+    aboutTitle: "Die JB Group",
+    aboutHeadline: "Starke Marken. Klare Vision.",
+    aboutText1: "Die JB Group bündelt spezialisierte Marken unter einer klaren unternehmerischen Vision. Von Biomasse über Pellets bis hin zu praktischen Alltagsgegenständen entstehen Geschäftsfelder mit Substanz, Qualität und langfristiger Perspektive.",
+    aboutText2: "Unser Anspruch ist es, Marken zu entwickeln, die einen konkreten Nutzen bieten, verlässlich auftreten und in ihren Märkten langfristig Vertrauen aufbauen.",
+    stat1: "Marken",
+    stat2: "Länder",
+    stat3: "Seit 2020",
+    stat4: "Qualitätsfokus",
+    visionTitle: "Vision",
+    visionText: "Wir entwickeln Marken, die durch klare Positionierung, Qualität und langfristiges Denken überzeugen.",
+    missionTitle: "Mission",
+    missionText: "Wir verbinden regionale Werte mit internationaler Perspektive und schaffen Produkte mit echtem Nutzen.",
+    valuesTitle: "Werte",
+    valuesText: "Qualität, Nachhaltigkeit und partnerschaftliches Handeln bilden die Grundlage unseres Erfolgs.",
+    brandsTitle: "Unsere Marken",
+    brandsText: "Drei Marken, drei klare Geschäftsbereiche: Biomassehandel, Pellets für Privatkunden und praktische Alltagsgegenstände im Online-Vertrieb.",
+    legnosiaCat: "Biomassehandel",
+    legnosiaText: "LEGNOSIA steht für den Handel mit Biomasse und naturbasierten Rohstoffen – mit Fokus auf Qualität, Verlässlichkeit und nachhaltige Energieversorgung.",
+    pelletCat: "Pellets für Privatkunden",
+    pelletText: "PELLETX ist der Online-Shop für Holzpellets für Privatkunden: einfach online bestellen, zuverlässig liefern lassen und effizient heizen.",
+    avyroCat: "Alltagsgegenstände",
+    avyroText: "AVYRO ist ein Online-Shop für praktische Alltagsgegenstände, die Haushalt, Organisation und tägliche Abläufe einfacher machen.",
+    visitWebsite: "Zur Website",
+    visitShop: "Zum Shop",
+    strengthsLabel: "Warum JB Group",
+    strengthsTitle: "Unsere Stärken",
+    strengthsText: "Was uns auszeichnet: klare Strategie, verlässliche Qualität und langfristiges Denken.",
+    strength1Title: "Innovation",
+    strength1Text: "Wir setzen auf praxisnahe Lösungen, die echten Mehrwert schaffen.",
+    strength2Title: "Qualität",
+    strength2Text: "Wir verfolgen hohe Standards in Produkt, Prozess und Markenauftritt.",
+    strength3Title: "Nachhaltigkeit",
+    strength3Text: "Wir denken langfristig und handeln verantwortungsvoll entlang der Wertschöpfung.",
+    strength4Title: "International",
+    strength4Text: "Regional verwurzelt, international vernetzt und zukunftsorientiert.",
+    newsLabel: "Aktuelles",
+    newsTitle: "News & Updates",
+    newsCat1: "Unternehmen",
+    newsCat2: "Marken",
+    newsCat3: "E-Commerce",
+    news1Title: "JB Group baut Markenportfolio weiter aus",
+    news1Text: "Mit klarer Markenführung stärkt die JB Group ihre Bereiche Biomasse, Pellets und Alltagsprodukte.",
+    news2Title: "LEGNOSIA fokussiert Biomassehandel",
+    news2Text: "Die Marke steht für naturbasierte Rohstoffe, zuverlässige Abwicklung und nachhaltige Energieversorgung.",
+    news3Title: "PELLETX und AVYRO stärken den Online-Vertrieb",
+    news3Text: "Die Shops verbinden klare Sortimente mit einfacher Bestellung und direktem Kundennutzen.",
+    readMore: "Weiterlesen →",
+    contactLabel: "Kontakt",
+    contactTitle: "Sprechen Sie mit uns",
+    contactText: "Ob Marken, Produkte, Kooperationen oder allgemeine Anfragen – wir freuen uns auf den Austausch und melden uns so schnell wie möglich zurück.",
+    phoneLabel: "Telefon",
+    addressLabel: "Adresse",
+    formName: "Name",
+    formEmail: "E-Mail",
+    formMessage: "Nachricht",
+    formButton: "Anfrage senden",
+    footerText: "JB Group vereint spezialisierte Marken aus Südtirol in den Bereichen Biomasse, Pellets und Alltagsprodukte.",
+    footerNav: "Navigation",
+    footerLegal: "Rechtliches",
+    imprint: "Impressum",
+    privacy: "Datenschutz",
+    terms: "AGB",
+    rights: "Alle Rechte vorbehalten."
+  },
+
+  it: {
+    navAbout: "Chi siamo",
+    navBrands: "Marchi",
+    navStrengths: "Punti di forza",
+    navNews: "News",
+    navContact: "Contatto",
+    scrollMore: "Scopri di più",
+    heroTitle: "Marchi forti per legno, energia e vita quotidiana.",
+    heroText: "JB Group riunisce marchi specializzati dell’Alto Adige, con focus su qualità, crescita sostenibile e partnership a lungo termine.",
+    heroBtn1: "Scopri i nostri marchi",
+    heroBtn2: "Contattaci",
+    aboutLabel: "Chi siamo",
+    aboutTitle: "JB Group",
+    aboutHeadline: "Marchi forti. Visione chiara.",
+    aboutText1: "JB Group riunisce marchi specializzati sotto una chiara visione imprenditoriale. Dalla biomassa ai pellet fino ai prodotti per la vita quotidiana, sviluppiamo aree di business solide e orientate al lungo termine.",
+    aboutText2: "Il nostro obiettivo è sviluppare marchi utili, affidabili e capaci di costruire fiducia nei rispettivi mercati.",
+    stat1: "Marchi",
+    stat2: "Paesi",
+    stat3: "Dal 2020",
+    stat4: "Focus sulla qualità",
+    visionTitle: "Visione",
+    visionText: "Sviluppiamo marchi che convincono grazie a posizionamento chiaro, qualità e visione a lungo termine.",
+    missionTitle: "Missione",
+    missionText: "Uniamo valori regionali e prospettiva internazionale per creare prodotti con valore concreto.",
+    valuesTitle: "Valori",
+    valuesText: "Qualità, sostenibilità e collaborazione sono alla base del nostro successo.",
+    brandsTitle: "I nostri marchi",
+    brandsText: "Tre marchi, tre aree chiare: commercio di biomassa, pellet per clienti privati e prodotti quotidiani online.",
+    legnosiaCat: "Commercio di biomassa",
+    legnosiaText: "LEGNOSIA opera nel commercio di biomassa e materie prime naturali, con focus su qualità, affidabilità e approvvigionamento energetico sostenibile.",
+    pelletCat: "Pellet per privati",
+    pelletText: "PELLETX è lo shop online di pellet per clienti privati: ordinazione semplice, consegna affidabile e riscaldamento efficiente.",
+    avyroCat: "Prodotti quotidiani",
+    avyroText: "AVYRO è uno shop online di prodotti pratici per la vita quotidiana, pensati per semplificare casa, organizzazione e routine.",
+    visitWebsite: "Vai al sito",
+    visitShop: "Vai allo shop",
+    strengthsLabel: "Perché JB Group",
+    strengthsTitle: "I nostri punti di forza",
+    strengthsText: "Ciò che ci distingue: strategia chiara, qualità affidabile e visione a lungo termine.",
+    strength1Title: "Innovazione",
+    strength1Text: "Puntiamo su soluzioni concrete che creano valore reale.",
+    strength2Title: "Qualità",
+    strength2Text: "Manteniamo standard elevati nei prodotti, nei processi e nella presenza del marchio.",
+    strength3Title: "Sostenibilità",
+    strength3Text: "Pensiamo a lungo termine e agiamo in modo responsabile lungo la catena del valore.",
+    strength4Title: "Internazionale",
+    strength4Text: "Radicati nel territorio, connessi a livello internazionale e orientati al futuro.",
+    newsLabel: "Attualità",
+    newsTitle: "News & aggiornamenti",
+    newsCat1: "Azienda",
+    newsCat2: "Marchi",
+    newsCat3: "E-commerce",
+    news1Title: "JB Group sviluppa il proprio portfolio di marchi",
+    news1Text: "Con una gestione chiara dei marchi, JB Group rafforza le aree biomassa, pellet e prodotti quotidiani.",
+    news2Title: "LEGNOSIA si focalizza sul commercio di biomassa",
+    news2Text: "Il marchio rappresenta materie prime naturali, gestione affidabile e approvvigionamento energetico sostenibile.",
+    news3Title: "PELLETX e AVYRO rafforzano il canale online",
+    news3Text: "Gli shop uniscono assortimenti chiari, acquisto semplice e valore diretto per il cliente.",
+    readMore: "Leggi di più →",
+    contactLabel: "Contatto",
+    contactTitle: "Parla con noi",
+    contactText: "Per marchi, prodotti, collaborazioni o richieste generali, saremo lieti di ricevere il tuo messaggio.",
+    phoneLabel: "Telefono",
+    addressLabel: "Indirizzo",
+    formName: "Nome",
+    formEmail: "E-mail",
+    formMessage: "Messaggio",
+    formButton: "Invia richiesta",
+    footerText: "JB Group riunisce marchi specializzati dell’Alto Adige nei settori biomassa, pellet e prodotti quotidiani.",
+    footerNav: "Navigazione",
+    footerLegal: "Legale",
+    imprint: "Note legali",
+    privacy: "Privacy",
+    terms: "Termini e condizioni",
+    rights: "Tutti i diritti riservati."
+  },
+
+  en: {
+    navAbout: "About us",
+    navBrands: "Brands",
+    navStrengths: "Strengths",
+    navNews: "News",
+    navContact: "Contact",
+    scrollMore: "Learn more",
+    heroTitle: "Strong brands for wood, energy and everyday life.",
+    heroText: "JB Group brings together specialized brands from South Tyrol, focused on quality, sustainable growth and long-term partnerships.",
+    heroBtn1: "Explore our brands",
+    heroBtn2: "Get in touch",
+    aboutLabel: "About us",
+    aboutTitle: "JB Group",
+    aboutHeadline: "Strong brands. Clear vision.",
+    aboutText1: "JB Group brings together specialized brands under a clear entrepreneurial vision. From biomass to pellets and everyday products, we develop focused business areas with substance and long-term perspective.",
+    aboutText2: "Our goal is to develop brands that deliver clear value, act reliably and build trust in their markets over time.",
+    stat1: "Brands",
+    stat2: "Countries",
+    stat3: "Since 2020",
+    stat4: "Quality focus",
+    visionTitle: "Vision",
+    visionText: "We develop brands that stand out through clear positioning, quality and long-term thinking.",
+    missionTitle: "Mission",
+    missionText: "We combine regional values with an international perspective to create products with real value.",
+    valuesTitle: "Values",
+    valuesText: "Quality, sustainability and partnership-driven thinking form the foundation of our success.",
+    brandsTitle: "Our brands",
+    brandsText: "Three brands, three clear business areas: biomass trading, pellets for private customers and everyday products online.",
+    legnosiaCat: "Biomass trading",
+    legnosiaText: "LEGNOSIA focuses on trading biomass and natural raw materials, with an emphasis on quality, reliability and sustainable energy supply.",
+    pelletCat: "Pellets for private customers",
+    pelletText: "PELLETX is the online shop for wood pellets for private customers: order online, receive reliable delivery and heat efficiently.",
+    avyroCat: "Everyday products",
+    avyroText: "AVYRO is an online shop for practical everyday items designed to simplify home, organization and daily routines.",
+    visitWebsite: "Visit website",
+    visitShop: "Visit shop",
+    strengthsLabel: "Why JB Group",
+    strengthsTitle: "Our strengths",
+    strengthsText: "What defines us: clear strategy, reliable quality and long-term thinking.",
+    strength1Title: "Innovation",
+    strength1Text: "We focus on practical solutions that create real added value.",
+    strength2Title: "Quality",
+    strength2Text: "We maintain high standards in products, processes and brand presence.",
+    strength3Title: "Sustainability",
+    strength3Text: "We think long-term and act responsibly across the value chain.",
+    strength4Title: "International",
+    strength4Text: "Locally rooted, internationally connected and future-oriented.",
+    newsLabel: "Latest",
+    newsTitle: "News & updates",
+    newsCat1: "Company",
+    newsCat2: "Brands",
+    newsCat3: "E-commerce",
+    news1Title: "JB Group continues to develop its brand portfolio",
+    news1Text: "With clear brand management, JB Group strengthens its biomass, pellets and everyday products areas.",
+    news2Title: "LEGNOSIA focuses on biomass trading",
+    news2Text: "The brand stands for natural raw materials, reliable execution and sustainable energy supply.",
+    news3Title: "PELLETX and AVYRO strengthen online distribution",
+    news3Text: "The shops combine clear assortments, easy ordering and direct customer value.",
+    readMore: "Read more →",
+    contactLabel: "Contact",
+    contactTitle: "Get in touch",
+    contactText: "For brands, products, partnerships or general inquiries, we look forward to hearing from you.",
+    phoneLabel: "Phone",
+    addressLabel: "Address",
+    formName: "Name",
+    formEmail: "Email",
+    formMessage: "Message",
+    formButton: "Send inquiry",
+    footerText: "JB Group brings together specialized brands from South Tyrol in biomass, pellets and everyday products.",
+    footerNav: "Navigation",
+    footerLegal: "Legal",
+    imprint: "Imprint",
+    privacy: "Privacy Policy",
+    terms: "Terms",
+    rights: "All rights reserved."
+  }
+};
+
+const langButtons = document.querySelectorAll(".lang-btn");
+const i18n = document.querySelectorAll("[data-i18n]");
+const navRight = document.getElementById("navRight");
+const mobileToggle = document.getElementById("mobileToggle");
+const siteHeader = document.getElementById("siteHeader");
+
+function setLanguage(lang) {
+  const dictionary = translations[lang] || translations.de;
+
+  i18n.forEach((element) => {
+    const key = element.dataset.i18n;
+    if (dictionary[key]) {
+      element.textContent = dictionary[key];
+    }
+  });
+
+  langButtons.forEach((button) => {
+    button.classList.toggle("active", button.dataset.lang === lang);
+  });
+
+  document.documentElement.lang = lang;
+  localStorage.setItem("jbGroupLang", lang);
+}
+
+langButtons.forEach((button) => {
+  button.addEventListener("click", () => setLanguage(button.dataset.lang));
+});
+
+mobileToggle.addEventListener("click", () => {
+  navRight.classList.toggle("open");
+});
+
+document.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => navRight.classList.remove("open"));
+});
+
+window.addEventListener("scroll", () => {
+  siteHeader.classList.toggle("scrolled", window.scrollY > 20);
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll(".reveal").forEach((element) => {
+  observer.observe(element);
+});
+
+setLanguage(localStorage.getItem("jbGroupLang") || "de");
 </script>
+
 </body>
 </html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>JB Group | Starke Marken für Holz, Energie und Alltag</title>
+  <meta name="description" content="Die JB Group aus Südtirol vereint Marken in den Bereichen Biomasse, Pellets und Alltagsprodukte." />
+
